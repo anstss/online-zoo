@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link
-        href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@500&family=Roboto:ital@0;1&family=Rubik:wght@400;500&display=swap"
+        href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@500&family=Roboto:ital@0;1&family=Rubik:wght@300;400;500&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="normalize.css">
     <link rel="stylesheet" href="style.css">
@@ -30,6 +30,16 @@
                 d="M13.3333 22.6667C18.488 22.6667 22.6667 18.488 22.6667 13.3333C22.6667 8.17868 18.488 4 13.3333 4C8.17868 4 4 8.17868 4 13.3333C4 18.488 8.17868 22.6667 13.3333 22.6667Z"
                 stroke-width="2.75" stroke-linecap="round" stroke-linejoin="round" />
             <path d="M28 28L20 20" stroke-width="2.75" stroke-linecap="round" stroke-linejoin="round" />
+        </symbol>
+    </svg>
+    <svg style="display: none;">
+        <symbol id="play-btn-bg" viewBox="0 0 100 75">
+            <path d="M77.428 0.589142H22.7855C10.7142 0.589142 0.928467 10.0254 0.928467 21.6656V53.2802C0.928467 64.9203 10.7142 74.3566 22.7855 74.3566H77.428C89.4993 74.3566 99.285 64.9203 99.285 53.2802V21.6656C99.285 10.0254 89.4993 0.589142 77.428 0.589142Z"/>
+        </symbol>
+    </svg>
+    <svg style="display: none;">
+        <symbol id="play-btn-icon" viewBox="0 0 33 38">
+            <path d="M4.08813 4.08011L29.1326 19.1068L4.08813 34.1335V4.08011Z" stroke-width="7.51335" stroke-linecap="round" stroke-linejoin="round"/>
         </symbol>
     </svg>
 
@@ -90,6 +100,34 @@
             </div>
         </div>
     </header>
+
+    <!-- Intro / Watch your favorite animal online -->
+    <section class="intro">
+        <div class="container">
+            <div class="intro__inner">
+                <div class="intro__content">
+                    <h2 class="intro__title">Watch your favorite <span class="intro__title_bold">animals online</span>
+                    </h2>
+                    <p class="intro__subtitle">Observe different animals from around the world online in live time. Help
+                        vulunteers to take a good care of animals, donate to your favorite ones.</p>
+                    <button class="button button_intro">Watch now</button>
+                </div>
+                <div class="intro__img">
+                    <form action="" class="watch">
+                        <button class="play-btn">
+                            <svg class="play-btn-bg">
+                                <use href="#play-btn-bg"></use>
+                            </svg>
+                            <svg class="play-btn-icon">
+                                <use href="#play-btn-icon"></use>
+                            </svg>
+                        </button>
+                    </form>
+                </div>
+                <div class="intro__img-border"></div>
+            </div>
+        </div>
+    </section>
 </body>
 
 </html>
