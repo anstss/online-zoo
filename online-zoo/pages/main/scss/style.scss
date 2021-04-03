@@ -45,9 +45,8 @@ $font-rubik: 'Rubik', sans-serif;
 
 $bg-color: #2A8086; //bg
 $white-color: #C5E1E5; //white
-$black-color: #0D444D; //black
+$black-color: #0D444D; //black & Bttn-black
 $hero-text-color: #F3F7F8; //hero-text
-$button-black: #0D444D; //Bttn-black
 $button-lined: #19707D; //bttn-lined
 $bamboo-color: #216E7A; //bamboo tree
 
@@ -369,7 +368,7 @@ $bamboo-color: #216E7A; //bamboo tree
 
 .button_intro {
     padding: 14px 84px;
-    color: $button-black;
+    color: $black-color;
     letter-spacing: -0.05em;
     background-color: #fff;
     box-shadow: 0px 2px 50px rgba(185, 213, 217, 0.6);
@@ -506,7 +505,6 @@ $bamboo-color: #216E7A; //bamboo tree
 // ==========================================
 
 .pets-in-zoo__inner {
-    // position: relative;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -723,7 +721,97 @@ $bamboo-color: #216E7A; //bamboo tree
 .pets-in-zoo__penguin {
     width: 33px;
     transform: rotateY(180deg);
-    // position: absolute;
-    // bottom: 0;
-    // right: 0;
+}
+
+
+// Pay and feed
+// ==========================================
+
+.pay-and-feed {
+    width: 100%;
+    height: 564px;
+    background: no-repeat right 33px bottom 135px / 116px 221px url(../../assets/images/bamboo.svg),
+                no-repeat left 16px top 124px / 130px 230px url(../../assets/images/tree.svg),
+                no-repeat center top / 100% 564px url(../../assets/images/pay-and-feed-bg.png);
+}
+
+.pay-and-feed__inner {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-top: 82px;
+}
+
+.pay-and-feed__title {
+    color: $white-color;
+}
+
+.donate-button {
+    letter-spacing: -0.05em;
+    padding: 14px 78px;
+    background-color: $white-color;
+    color: $black-color;
+    filter: drop-shadow(0px 2px 20px rgba(185, 213, 217, 0.6));
+    transition: all 0.2s linear;
+}
+
+.donate-button:hover {
+    background-color: #fff;
+    color: #000;
+    filter: drop-shadow(0px 2px 20px rgba(185, 213, 217, 1));
+}
+
+.pay-and-feed__cards {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding-top: 91px;
+}
+
+.pay-and-feed__card {
+    position: relative;
+}
+
+.pay-and-feed__card::before {
+    content: "";
+    width: 266px;
+    border-bottom: 1.5px solid $white-color;
+    position: absolute;
+    top: 74px;
+    left: 357px; //145px + 49px
+}
+
+.pay-and-feed__card::after {
+    content: url(../../assets/images/pay-and-feed-arrow.svg);
+    width: 15px;
+    height: 21px;
+    position: absolute;
+    top: 63px;
+    left: 623px; //357px + 266px
+    background: no-repeat left 33px top 50% / 15px 21px url(../../assets/images/pay-and-feed-arrow.svg);
+}
+
+.pay-and-feed__card:last-child {
+
+    &::before {
+        content: none;
+    }
+
+    &::after {
+        content: none;
+    }
+}
+
+.pay-and-feed__icon-bg {
+    box-shadow: 0px 2px 50px rgba(185, 213, 217, 0.6);
+}
+
+.pay-and-feed__subtitle {
+    color: $white-color;
+}
+
+.pay-and-feed__icon {
+    fill: $bamboo-color;
+    width: 64px;
+    height: 64px;
 }
