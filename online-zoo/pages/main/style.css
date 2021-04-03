@@ -28,6 +28,10 @@ button {
   outline: none;
 }
 
+p {
+  margin: 0;
+}
+
 .h1 {
   position: absolute;
   width: 1px;
@@ -469,15 +473,18 @@ button {
           justify-content: space-between;
 }
 
-.how-it-works__title {
-  display: block;
-  width: 100%;
+.section-title {
   font-family: "Rubik", sans-serif;
   font-weight: 400;
   font-size: 24px;
   line-height: 28px;
   text-transform: uppercase;
   color: #0D444D;
+}
+
+.how-it-works__title {
+  display: block;
+  width: 100%;
   margin-bottom: 98px;
 }
 
@@ -543,5 +550,295 @@ button {
   line-height: 143%;
   text-align: center;
   color: #0D444D;
+}
+
+.pets-in-zoo__inner {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+  padding-top: 70px;
+  padding-bottom: 80px;
+}
+
+.button_pets-in-zoo {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 14px 20px;
+  letter-spacing: 0.1em;
+  color: #19707D;
+  border: 1.5px solid #19707D;
+  -webkit-transition: all 0.2s linear;
+  -o-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+}
+
+.pets-in-zoo__favorite {
+  width: 20px;
+  height: 18px;
+  fill: none;
+  stroke: #19707D;
+  margin-right: 19px;
+}
+
+.button_pets-in-zoo:hover {
+  color: #fff;
+  background-color: #19707D;
+  -webkit-box-shadow: 0px 2px 50px #b9d5d9;
+          box-shadow: 0px 2px 50px #b9d5d9;
+}
+
+.button_pets-in-zoo:hover .pets-in-zoo__favorite {
+  fill: #fff;
+  stroke: #fff;
+}
+
+.pets-in-zoo__cards {
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+  padding-top: 66px;
+}
+
+.pets-card {
+  background-color: #fff;
+  width: 480px;
+  height: 344px;
+  -webkit-box-shadow: 0px 2px 30px rgba(0, 0, 0, 0.06);
+          box-shadow: 0px 2px 30px rgba(0, 0, 0, 0.06);
+  -webkit-border-radius: 10px;
+          border-radius: 10px;
+  padding-top: 20px;
+  margin-bottom: 20px;
+  -webkit-transition: all 0.2s linear;
+  -o-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+}
+
+.pets-card__photo-shape {
+  position: relative;
+  width: 229px;
+  height: 221px;
+  -webkit-mask-image: url(../../assets/images/pets-shape.svg);
+          mask-image: url(../../assets/images/pets-shape.svg);
+  -webkit-transition: -webkit-transform 0.4s linear;
+  transition: -webkit-transform 0.4s linear;
+  -o-transition: transform 0.4s linear;
+  transition: transform 0.4s linear;
+  transition: transform 0.4s linear, -webkit-transform 0.4s linear;
+  margin: 0 auto 32px;
+}
+
+.pets-card__photo {
+  content: "";
+  position: absolute;
+  top: -10px;
+  left: -10px;
+  right: -10px;
+  bottom: -10px;
+}
+
+.pets-card__photo::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  -webkit-transition: -webkit-transform 0.4s linear;
+  transition: -webkit-transform 0.4s linear;
+  -o-transition: transform 0.4s linear;
+  transition: transform 0.4s linear;
+  transition: transform 0.4s linear, -webkit-transform 0.4s linear;
+}
+
+.pets-card__photo-panda::before {
+  background: no-repeat center/384px auto url(../../assets/images/pets-panda-min.jpg);
+}
+
+.pets-card__photo-eagles::before {
+  background: no-repeat center/527px auto url(../../assets/images/pets-eagles-min.jpg);
+}
+
+.pets-card__photo-gorrilas::before {
+  background: no-repeat center/379px auto url(../../assets/images/pets-gorillas-min.jpg);
+}
+
+.pets-card__photo-alligators::before {
+  background: no-repeat center/406px auto url(../../assets/images/pets-alligators-min.jpg);
+}
+
+.pets-card__photo-elephants::before {
+  background: no-repeat center/384px auto url(../../assets/images/pets-elephants-min.jpg);
+}
+
+.pets-card__photo-lemurs::before {
+  background: no-repeat center/310px auto url(../../assets/images/pets-lemurs-min.jpg);
+}
+
+.pets-card__photo::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: no-repeat center url(../../assets/images/pets-layer.png);
+  -webkit-transition: -webkit-transform 0.4s linear;
+  transition: -webkit-transform 0.4s linear;
+  -o-transition: transform 0.4s linear;
+  transition: transform 0.4s linear;
+  transition: transform 0.4s linear, -webkit-transform 0.4s linear;
+}
+
+.pets-card__info {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 17px 30px 21px;
+  border-top: 1px solid #E5EAEB;
+}
+
+.pets-card__title {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 28px;
+  color: #2D2D2D;
+  margin-bottom: 6px;
+}
+
+.pets-card__subtitle {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  color: #919191;
+}
+
+.pets-card__tv {
+  width: 32px;
+  height: 32px;
+  fill: none;
+  stroke: #216E7A;
+}
+
+.pets-card:hover {
+  -webkit-box-shadow: 0px 2px 30px rgba(33, 110, 122, 0.5);
+          box-shadow: 0px 2px 30px rgba(33, 110, 122, 0.5);
+  cursor: pointer;
+}
+
+.pets-card:hover .pets-card__tv {
+  fill: #216E7A;
+}
+
+.pets-card:hover .pets-card__photo-shape,
+.pets-card:hover .pets-card__photo::after {
+  -webkit-transform: rotate(360deg);
+      -ms-transform: rotate(360deg);
+          transform: rotate(360deg);
+}
+
+.pets-card:hover .pets-card__photo::before {
+  -webkit-transform: rotate(-360deg);
+      -ms-transform: rotate(-360deg);
+          transform: rotate(-360deg);
+}
+
+.pets-in-zoo__buttons {
+  margin-bottom: 243px;
+}
+
+.slider-button {
+  fill: none;
+  stroke: #19707D;
+}
+
+.button-next,
+.button-prev {
+  width: 17px;
+  height: 24px;
+  -webkit-transition: all 0.2s linear;
+  -o-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+}
+
+.button-next {
+  padding: 15px 17px 15px 19px;
+}
+
+.button-prev {
+  padding: 15px 19px 15px 17px;
+}
+
+.button-next:hover,
+.button-prev:hover {
+  cursor: pointer;
+  -webkit-transform: scale(1.3);
+      -ms-transform: scale(1.3);
+          transform: scale(1.3);
+}
+
+.pets-in-zoo__aside {
+  position: absolute;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  bottom: 33px;
+  right: -59px;
+  z-index: 1;
+}
+
+.pets-in-zoo__penguin {
+  width: 33px;
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
 }
 /*# sourceMappingURL=style.css.map */
