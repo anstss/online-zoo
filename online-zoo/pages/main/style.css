@@ -692,7 +692,7 @@ p {
 }
 
 .pets-card__photo-alligators::before {
-  background: no-repeat center/406px auto url(../../assets/images/pets-alligators-min.jpg);
+  background: no-repeat left 0 top 0/406px auto url(../../assets/images/pets-alligators-min.jpg);
 }
 
 .pets-card__photo-elephants::before {
@@ -1150,7 +1150,7 @@ p {
 }
 
 .beautiful-animals__photo .pets-card__photo-alligators::before {
-  background: no-repeat center/135px auto url(../../assets/images/pets-alligators-min.jpg);
+  background: no-repeat left 0 top 0/135px auto url(../../assets/images/pets-alligators-min.jpg);
 }
 
 .beautiful-animals__photo .pets-card__photo-elephants::before {
