@@ -1039,3 +1039,35 @@ $bamboo-color: #216E7A; //bamboo tree
 
     margin-bottom: 0;
 }
+
+
+// Footer
+// ==========================================
+
+.footer {
+    width: 100%;
+    height: 200px;
+    background-color: #196469;
+}
+
+.footer__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 58px;
+}
+
+.copyright__text {
+    font-family: $font-roboto;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: right;
+    text-transform: uppercase;
+    color: #fff;
+    margin-bottom: 10px;
+}
+
+.copyright__text:last-child {
+    margin-bottom: 0;
+}
