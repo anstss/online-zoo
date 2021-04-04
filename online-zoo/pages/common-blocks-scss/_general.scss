@@ -1,0 +1,72 @@
+body {
+    background-color: #f6f9fa;
+}
+
+
+// Reset
+// ==========================================
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+input {
+    border: none;
+    outline: none;
+}
+
+button {
+    background-color: transparent;
+    padding: 0;
+    border: none;
+    outline: none;
+}
+
+p {
+    margin: 0;
+}
+
+
+// Variables
+// ==========================================
+$font-roboto: 'Roboto', sans-serif;
+$font-roboto-mono: 'Roboto Mono', monospace;
+$font-rubik: 'Rubik', sans-serif;
+
+$bg-color: #2A8086; //bg
+$white-color: #C5E1E5; //white
+$black-color: #0D444D; //black & Bttn-black
+$hero-text-color: #F3F7F8; //hero-text
+$button-lined: #19707D; //bttn-lined
+$bamboo-color: #216E7A; //bamboo tree
+
+
+// H1-hidden
+// ==========================================
+.h1 {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    font-size: 1px;
+    color: $bg-color;
+}
+
+
+// Container
+// ==========================================
+
+.container {
+    width: 100%;
+    max-width: 1480px;
+    margin: 0 auto;
+}
