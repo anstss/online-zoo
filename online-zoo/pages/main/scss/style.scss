@@ -738,6 +738,7 @@ $bamboo-color: #216E7A; //bamboo tree
 .pay-and-feed__inner {
     display: flex;
     flex-wrap: wrap;
+    align-items: center;
     justify-content: space-between;
     padding-top: 82px;
 }
@@ -817,12 +818,13 @@ $bamboo-color: #216E7A; //bamboo tree
 }
 
 
-// Pay and feed
+// Testimonials
 // ==========================================
 
 .testimonials__inner {
     display: flex;
     flex-wrap: wrap;
+    align-items: center;
     justify-content: space-between;
     padding-top: 100px;
     padding-bottom: 101px;
@@ -926,4 +928,114 @@ $bamboo-color: #216E7A; //bamboo tree
     font-size: 16px;
     line-height: 19px;
     color: #000;
+}
+
+
+// Look at this beautiful animals
+// ==========================================
+
+.beautiful-animals__inner {
+    position: relative;
+    padding-bottom: 116px;
+}
+
+.beautiful-animals__cards {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 50px;
+    padding-right: 159px;
+}
+
+.beautiful-animals__card {
+    position: relative;
+    width: 105px;
+    height: 131px;
+
+    transition: all 0.2s linear;
+}
+
+.beautiful-animals__photo {
+    position: relative;
+    padding-top: 16px;
+    // padding-bottom: 10px;
+    
+    .pets-card__photo-shape {
+        mask-size: 76px 73px;
+        width: 76px;
+        height: 73px;
+    }
+
+    .pets-card__photo-panda::before {
+        background: no-repeat center / 110px auto url(../../assets/images/pets-panda-min.jpg);
+    }
+    
+    .pets-card__photo-gorrilas::before {
+        background: no-repeat center / 125px auto url(../../assets/images/pets-gorillas-min.jpg);
+    }
+
+    .pets-card__photo-eagles::before {
+        background: no-repeat center / 174px auto url(../../assets/images/pets-eagles-min.jpg);
+    }
+
+    .pets-card__photo-alligators::before {
+        background: no-repeat center / 135px auto url(../../assets/images/pets-alligators-min.jpg);
+    }
+
+    .pets-card__photo-elephants::before {
+        background: no-repeat center / 128px auto url(../../assets/images/pets-elephants-min.jpg);
+    }
+
+    .pets-card__photo-lemurs::before {
+        background: no-repeat center / 98px auto url(../../assets/images/pets-lemurs-min.jpg);
+    }
+}
+
+.beautiful-animals__photo::before {
+    opacity: 0;
+    content: "";
+    width: 105px;
+    height: 96px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: no-repeat top 0px center / 105px auto url(../../assets/images/beautiful-animals-frame.svg);
+    transition: all 0.4s linear;
+}
+
+.beautiful-animals__photo:hover {
+    &::before {
+        opacity: 1;
+        transform: rotate(360deg);
+    }
+
+    cursor: pointer;
+}
+
+.beautiful-animals__subtitle {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translate(-50%);
+    font-family: $font-roboto;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 18px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #2D2D2D;
+}
+
+.beautiful-animals__buttons {
+    position: absolute;
+    top: 92px;
+    right: 0;
+    z-index: 2;
+
+    width: 52px;
+    height: 104px;
+    margin-right: 47px;
+    margin-left: 59px;
+
+    margin-bottom: 0;
 }
