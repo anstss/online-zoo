@@ -256,218 +256,73 @@ p {
           border-radius: 100px;
 }
 
-.map {
-  min-height: -webkit-calc(100vh - 110px - 200px);
-  min-height: calc(100vh - 110px - 200px);
-  background-color: #2A8086;
-}
-
-.map__inner {
+.error-page {
   position: relative;
-  padding-top: 26px;
+  width: 100%;
+  height: 920px;
+  background: no-repeat left 577px bottom 74px/33px 65px url(../../../assets/images/penguin.svg), no-repeat right 94px bottom 38px/130px 230px url(../../../assets/images/tree.svg), no-repeat right 738px bottom 147px/147px 280px url(../../../assets/images/bamboo.svg), no-repeat right 805px bottom 157px/163px 155px url(../../../assets/images/panda.svg), no-repeat left 380px bottom 154px/130px 230px url(../../../assets/images/tree.svg), no-repeat center bottom -90px/100% 493px url(../../../assets/images/zoos-bg.png);
 }
 
-.map__title {
-  font-family: "Rubik", sans-serif;
-  font-weight: 400;
-  font-size: 24px;
-  line-height: 28px;
-  text-transform: uppercase;
-  color: #C5E1E5;
-  margin-bottom: 53px;
-}
-
-.map__world-map {
-  width: 1422px;
-  height: 912px;
-  margin-bottom: 16px;
-}
-
-.map__animals {
-  position: absolute;
-  top: 0;
-  left: 0;
-}
-
-.map__animals-card_eagles {
-  position: absolute;
-  top: 505px;
-  left: 158px;
-}
-
-.map__animals-card_alligators {
-  position: absolute;
-  top: 575px;
-  left: 313px;
-}
-
-.map__animals-card_gorillas {
-  position: absolute;
-  top: 675px;
-  left: 675px;
-}
-
-.map__animals-card_pandas {
-  position: absolute;
-  top: 540px;
-  left: 1020px;
-}
-
-.map__animals-card {
-  position: relative;
-  cursor: pointer;
-}
-
-.tooltip {
-  visibility: hidden;
-  opacity: 0;
-  position: absolute;
-  top: -110px;
-  left: -160px;
-  -webkit-transition: all 0.2s linear;
-  -o-transition: all 0.2s linear;
-  transition: all 0.2s linear;
-}
-
-.map__animals-tooltip {
-  position: relative;
-  width: 410px;
-  height: 89px;
-  background-color: #fff;
-  -webkit-box-shadow: 0px 2px 30px rgba(0, 0, 0, 0.06);
-          box-shadow: 0px 2px 30px rgba(0, 0, 0, 0.06);
-  -webkit-border-radius: 10px;
-          border-radius: 10px;
-}
-
-.map__animals-tooltip::after {
-  content: "";
-  position: absolute;
-  top: 89px;
-  left: 190px;
-  width: 0;
-  height: 0;
-  border-style: solid;
-  border-width: 16px 15px 0 15px;
-  border-color: #fff transparent transparent transparent;
-}
-
-.map__animals-tooltip-info {
-  padding: 24px 8px;
-}
-
-.map__animals-tooltip-text {
-  font-family: "Roboto", sans-serif;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 143%;
-  text-align: center;
-  color: #0D444D;
-}
-
-.map__animals-photo-bg {
-  position: relative;
-  width: 90px;
-  height: 90px;
-}
-
-.map__map-pets-bg {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 90px;
-  height: 83px;
-  fill: #C5E1E5;
-  -webkit-filter: drop-shadow(0px 4px 10px #C5E1E5);
-          filter: drop-shadow(0px 4px 10px #C5E1E5);
-  -webkit-transition: all 0.4s linear;
-  -o-transition: all 0.4s linear;
-  transition: all 0.4s linear;
-}
-
-.map__animals-photo {
-  position: absolute;
-  top: 6px;
-  left: 9px;
-  width: 73px;
-  height: 70px;
-  -webkit-mask-image: url(../../assets/images/pets-shape.svg);
-          mask-image: url(../../assets/images/pets-shape.svg);
-  -webkit-mask-size: 73px 70px;
-          mask-size: 73px 70px;
-}
-
-.map__animals-photo_eagles {
-  background: no-repeat center url(../../assets/images/pets-layer.png), no-repeat center/174px auto url(../../assets/images/pets-eagles-min.jpg);
-}
-
-.map__animals-photo_alligators {
-  background: no-repeat center url(../../assets/images/pets-layer.png), no-repeat left 0 bottom 0/129px auto url(../../assets/images/pets-alligators-min.jpg);
-}
-
-.map__animals-photo_gorillas {
-  background: no-repeat center url(../../assets/images/pets-layer.png), no-repeat center/120px auto url(../../assets/images/pets-gorillas-min.jpg);
-}
-
-.map__animals-photo_pandas {
-  background: no-repeat center url(../../assets/images/pets-layer.png), no-repeat center/106px auto url(../../assets/images/pets-panda-min.jpg);
-}
-
-.map__animals-card:hover .map__map-pets-bg {
-  -webkit-transform: rotate(360deg);
-      -ms-transform: rotate(360deg);
-          transform: rotate(360deg);
-}
-
-.map__animals-card:hover .tooltip {
-  visibility: visible;
-  opacity: 1;
-}
-
-.map__animals-card:active .map__map-pets-bg {
-  fill: #0A5D69;
-}
-
-.map__buttons {
+.error-page__inner {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  position: absolute;
-  bottom: 25px;
-  right: 25px;
-  stroke: #fff;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-top: 30px;
+}
+
+.error-page__title {
+  font-family: Sahitya, sans-serif;
+  font-weight: 400;
+  font-size: 250px;
+  color: #0D444D;
+  margin-bottom: 10px;
+}
+
+.error-page__message {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  color: #0D444D;
+  margin-bottom: 36px;
+}
+
+.button {
+  font-family: "Roboto Mono", monospace;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 24px;
+  text-transform: uppercase;
+  -webkit-border-radius: 100px;
+          border-radius: 100px;
   cursor: pointer;
 }
 
-.zoom-in,
-.zoom-out {
-  display: block;
-  width: 32px;
-  height: 32px;
-  background: rgba(255, 255, 255, 0.4);
-  border: 1.5px solid #fff;
-  -webkit-border-radius: 50%;
-          border-radius: 50%;
+.button_back {
+  letter-spacing: -0.05em;
+  padding: 14px 78px;
+  background-color: #19707D;
+  color: #F3F7F8;
   -webkit-transition: all 0.2s linear;
   -o-transition: all 0.2s linear;
   transition: all 0.2s linear;
 }
 
-.zoom-in:hover,
-.zoom-out:hover {
-  background-color: #216E7A;
-}
-
-.zoom-in {
-  margin-right: 15px;
-}
-
-.zoom-in__elem,
-.zoom-out__elem {
-  padding: 5px;
-  width: 22px;
-  height: 22px;
+.button_back:hover {
+  background-color: #F3F7F8;
+  color: #19707D;
+  -webkit-filter: drop-shadow(0px 2px 20px #b9d5d9);
+          filter: drop-shadow(0px 2px 20px #b9d5d9);
 }
 
 .footer {
