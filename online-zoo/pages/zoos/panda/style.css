@@ -399,7 +399,6 @@ p {
 .zoos__inner {
   padding-top: 50px;
   width: 100%;
-  height: 100%;
 }
 
 .zoos__title-wrapper {
@@ -503,6 +502,10 @@ p {
   margin-bottom: 56px;
 }
 
+.zoos__side-cameras {
+  margin-bottom: 98px;
+}
+
 .zoos__side-cameras-wrapper {
   display: -webkit-box;
   display: -webkit-flex;
@@ -596,6 +599,117 @@ p {
   -webkit-transform: scale(1.3);
       -ms-transform: scale(1.3);
           transform: scale(1.3);
+}
+
+.information__inner {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.information__title {
+  font-family: "Rubik", sans-serif;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 28px;
+  text-transform: uppercase;
+  color: #0D444D;
+  margin-bottom: 24px;
+}
+
+.info__elem {
+  width: 604px;
+  margin-bottom: 30px;
+}
+
+.info__subtitle {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  color: #0D444D;
+  margin-bottom: 8px;
+}
+
+.info__text {
+  width: 528px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 143%;
+  color: #0D444D;
+}
+
+.info__link {
+  -webkit-text-decoration-line: underline;
+          text-decoration-line: underline;
+  color: #0D444D;
+}
+
+.facts {
+  padding-left: 36px;
+}
+
+.facts-list {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 143%;
+  color: #0D444D;
+  list-style-image: url(../../../assets/icons/list-style-type.svg);
+  margin-left: 23px;
+}
+
+.fact {
+  width: 574px;
+  margin-bottom: 24px;
+}
+
+.donate {
+  position: relative;
+  width: 100%;
+  height: 425px;
+  background: no-repeat right 94px bottom 38px/130px 230px url(../../../assets/images/tree.svg), no-repeat right 738px bottom 147px/147px 280px url(../../../assets/images/bamboo.svg), no-repeat right 805px bottom 157px/163px 155px url(../../../assets/images/panda.svg), no-repeat left 380px top 19px/130px 230px url(../../../assets/images/tree.svg), no-repeat center bottom -90px/100% 493px url(../../../assets/images/zoos-bg.png);
+}
+
+.button {
+  font-family: "Roboto Mono", monospace;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 24px;
+  text-transform: uppercase;
+  -webkit-border-radius: 100px;
+          border-radius: 100px;
+  cursor: pointer;
+}
+
+.donate__inner {
+  position: absolute;
+  bottom: 80px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+.button_donate {
+  letter-spacing: -0.05em;
+  padding: 14px 78px;
+  background-color: #C5E1E5;
+  color: #0D444D;
+  -webkit-filter: drop-shadow(0px 2px 20px rgba(185, 213, 217, 0.6));
+          filter: drop-shadow(0px 2px 20px rgba(185, 213, 217, 0.6));
+  -webkit-transition: all 0.2s linear;
+  -o-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+}
+
+.button_donate:hover {
+  background-color: #fff;
+  color: #000;
+  -webkit-filter: drop-shadow(0px 2px 20px #b9d5d9);
+          filter: drop-shadow(0px 2px 20px #b9d5d9);
 }
 
 .footer {
