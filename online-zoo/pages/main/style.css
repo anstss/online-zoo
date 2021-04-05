@@ -331,15 +331,6 @@ p {
   transition: all 0.5s linear;
 }
 
-.intro__img:hover + .intro__img-border {
-  width: 870px;
-  height: 720px;
-  opacity: 1;
-  background: #F3F7F8;
-  -webkit-animation: bordering 10s linear infinite;
-          animation: bordering 10s linear infinite;
-}
-
 @-webkit-keyframes bordering {
   0% {
     -webkit-border-radius: 61% 39% 34% 66% / 60% 58% 42% 40%;
@@ -409,12 +400,6 @@ p {
   transition: all 0.2s linear;
 }
 
-.button_intro:hover {
-  color: #000;
-  -webkit-box-shadow: 0px 2px 50px #b9d5d9;
-          box-shadow: 0px 2px 50px #b9d5d9;
-}
-
 .play-btn {
   position: absolute;
   top: 333px;
@@ -444,13 +429,32 @@ p {
   stroke: #fff;
 }
 
-.play-btn:hover {
+.intro__img:hover {
+  cursor: pointer;
+}
+
+.intro__img:hover + .intro__img-border {
+  width: 870px;
+  height: 720px;
+  opacity: 1;
+  background: #F3F7F8;
+  -webkit-animation: bordering 10s linear infinite;
+          animation: bordering 10s linear infinite;
+}
+
+.intro__img:hover .button_intro {
+  color: #000;
+  -webkit-box-shadow: 0px 2px 50px #b9d5d9;
+          box-shadow: 0px 2px 50px #b9d5d9;
+}
+
+.intro__img:hover .play-btn {
   -webkit-transform: scale(1.2);
       -ms-transform: scale(1.2);
           transform: scale(1.2);
 }
 
-.play-btn:hover .play-btn-bg {
+.intro__img:hover .play-btn .play-btn-bg {
   fill-opacity: 1;
 }
 
