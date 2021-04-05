@@ -1,0 +1,142 @@
+// Reset, body, variables, h1-hidden, container
+// ==========================================
+
+@import "../../common-blocks/scss/general";
+
+
+// Header
+// ==========================================
+
+@import "../../common-blocks/scss/header";
+
+
+// Main
+// ==========================================
+
+.main {
+    height: 1500px;
+}
+
+
+// Side bar
+// ==========================================
+
+.side-bar {
+    position: sticky;
+    top: 30px;
+}
+
+.side-bar__inner {
+    width: 105px;
+    padding-top: 40px;
+}
+
+.side-bar__animals-card {
+    cursor: pointer;
+    position: relative;
+    display: block;
+    width: 105px;
+    padding-bottom: 15px;
+    padding-top: 16px;
+    margin-bottom: 30px;
+
+    transition: all 0.2s linear;
+}
+
+.side-bar__animals-photo-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    visibility: hidden;
+    opacity: 0;
+    width: 105px;
+    height: 96px;
+    fill: $bg-color;
+    filter: drop-shadow(0px 4px 10px $white-color);
+
+    transition: all 0.2s linear;
+}
+
+.side-bar__animals-photo-shape {
+    position: relative;
+    width: 76px;
+    height: 73px;
+    mask-image: url(../../../assets/images/pets-shape.svg);
+    mask-size: 76px 73px;
+    transition: transform 0.4s linear;
+    margin: 0 auto;
+}
+
+.side-bar__animals-photo {
+    content: "";
+    position: absolute;
+    top: -10px;
+    left: -10px;
+    right: -10px;
+    bottom: -10px;
+}
+
+.side-bar__animals-photo::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    
+    transition: transform 0.4s linear;
+}
+
+.side-bar__animals-photo_pandas::before {
+    background: no-repeat center / 110px auto url(../../../assets/images/pets-panda-min.jpg);
+}
+
+.side-bar__animals-photo_eagles::before {
+    background: no-repeat center / 175px auto url(../../../assets/images/pets-eagles-min.jpg);
+}
+
+.side-bar__animals-photo_gorillas::before {
+    background: no-repeat center / 126px auto url(../../../assets/images/pets-gorillas-min.jpg);
+}
+
+.side-bar__animals-photo_alligators::before {
+    background: no-repeat left 0 bottom 0 / 135px auto url(../../../assets/images/pets-alligators-min.jpg);
+}
+
+.side-bar__animals-card:hover {
+    .side-bar__animals-photo-shape {
+        transform: rotate(360deg);
+    }
+    
+    .side-bar__animals-photo::before {
+        transform: rotate(-360deg);
+    }
+}
+
+.side-bar__animals-title {
+    position: relative;
+    top: 8px;
+    z-index: 2;
+    font-family: $font-roboto-mono;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 18px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #2D2D2D;
+}
+
+.side-bar__animals-card_active {
+    cursor: default;
+
+    .side-bar__animals-photo-bg {
+        visibility: visible;
+        opacity: 1;
+    }
+}
+
+
+// Footer
+// ==========================================
+
+@import "../../common-blocks/scss/footer";

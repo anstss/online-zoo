@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;500&family=Roboto:ital,wght@0,400;0,500;1,400&family=Rubik:wght@300;400;500&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="../../common-blocks/normalize.css">
+    <link rel="stylesheet" href="style.css">
+    <title>The Giant Pandas</title>
+</head>
+
+<body>
+    <!-- Sprites -->
+    <svg style="display: none;">
+        <symbol id="logo-icon" viewBox="0 0 73 25">
+            <path fill-rule="evenodd" clip-rule="evenodd"
+                d="M0.612793 9.38415V0.516113H16.2358C16.5616 0.516113 16.881 0.538234 17.2007 0.560372C17.238 0.562951 17.2752 0.56553 17.3125 0.568074L15.0545 4.95013H5.0765V9.38415C5.0765 15.4964 10.0826 20.4692 16.2358 20.4692H17.3517H27.3951V16.0352C27.3951 11.1888 24.2282 7.10489 19.8582 5.60398L17.3909 0.572405C25.4658 1.16435 31.8588 7.86771 31.8588 16.0352V20.4692C31.8588 22.9146 29.8568 24.9032 27.3951 24.9032H16.2358C7.62305 24.9032 0.612793 17.9396 0.612793 9.38415ZM55.254 0.572405C55.2607 0.561319 55.2932 0.516113 55.2932 0.516113L55.3325 0.568074C55.3697 0.56553 55.407 0.562951 55.4442 0.560372C55.7639 0.538234 56.0833 0.516113 56.4092 0.516113H72.0322V9.38415C72.0322 17.9396 65.0219 24.9032 56.4092 24.9032H45.2499C42.7882 24.9032 40.7862 22.9146 40.7862 20.4692V16.0352C40.7862 7.86771 47.1792 1.16435 55.254 0.572405ZM67.5684 4.95013H57.5905C58.1752 6.53529 58.641 8.44192 58.641 10.4927C58.641 16.0019 55.2932 20.4692 55.2932 20.4692C55.2932 20.4692 51.9455 16.0019 51.9455 10.4927C51.9455 8.70574 52.3114 7.0539 52.7868 5.60398C48.4168 7.10489 45.2499 11.1888 45.2499 16.0352V20.4692H55.2932H56.4092C62.5624 20.4692 67.5684 15.4964 67.5684 9.38415V4.95013Z" />
+            <path
+                d="M17.3909 0.572405C17.3842 0.561319 17.3517 0.516113 17.3517 0.516113L17.3125 0.568074L15.0545 4.95013C14.4697 6.53529 14.0039 8.44192 14.0039 10.4927C14.0039 16.0019 17.3517 20.4692 17.3517 20.4692C17.3517 20.4692 20.6995 16.0019 20.6995 10.4927C20.6995 8.70574 20.3336 7.0539 19.8582 5.60398L17.3909 0.572405Z" />
+        </symbol>
+    </svg>
+    <svg style="display: none;">
+        <symbol id="search-icon" viewBox="0 0 32 32">
+            <path
+                d="M13.3333 22.6667C18.488 22.6667 22.6667 18.488 22.6667 13.3333C22.6667 8.17868 18.488 4 13.3333 4C8.17868 4 4 8.17868 4 13.3333C4 18.488 8.17868 22.6667 13.3333 22.6667Z"
+                stroke-width="2.75" stroke-linecap="round" stroke-linejoin="round" />
+            <path d="M28 28L20 20" stroke-width="2.75" stroke-linecap="round" stroke-linejoin="round" />
+        </symbol>
+    </svg>
+    <svg style="display: none;">
+        <symbol id="zoos-animals-bg" viewBox="0 0 105 96">
+            <path d="M95.7575 19.926C104.862 31.5584 107.392 47.4134 102.671 59.6035C97.9494 71.7935 86.1467 80.3983 72.5736 87.0909C59.0847 93.7834 43.8255 98.6435 30.8425 94.4208C17.8595 90.2778 7.06844 77.2113 2.43166 61.7547C-2.12082 46.298 -0.519025 28.4511 9.26038 16.7391C19.1241 4.94737 37.0811 -0.789134 54.0264 0.087276C70.8875 0.963686 86.6525 8.37333 95.7575 19.926Z"/>
+        </symbol>
+    </svg>
+
+    <!-- Header -->
+    <!-- TODO: add link for navigation -->
+    <header class="header">
+        <div class="container">
+            <div class="header__inner">
+                <h1 class="h1">Online Zoo</h1>
+                <div class="navbar-left">
+                    <a href="#" class="logo">
+                        <span class="logo__text">online</span>
+                        <div class="logo__text-icon">
+                            <span class="logo__text_upper">z</span>
+                            <svg class="logo__elem">
+                                <use href="#logo-icon"></use>
+                            </svg>
+                        </div>
+                    </a>
+                    <nav class="nav">
+                        <ul class="nav__main-navbar">
+                            <li class="nav__item">
+                                <a href="#" class="nav__link">About</a>
+                            </li>
+                            <li class="nav__item">
+                                <a href="#" class="nav__link">Map</a>
+                            </li>
+                            <li class="nav__item">
+                                <a href="#" class="nav__link nav__link_active">Zoos</a>
+                            </li>
+                            <li class="nav__item">
+                                <a href="#" class="nav__link">Contact Us</a>
+                            </li>
+                            <li class="nav__item">
+                                <a href="#" class="nav__link">Design</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+                <ul class="navbar-right">
+                    <li class="navbar-right__item">
+                        <form action="" class="search">
+                            <label for="search" class="search__icon">
+                                <svg class="search__icon-elem">
+                                    <use href="#search-icon"></use>
+                                </svg>
+                            </label>
+                            <input type="text" id="search" class="search__input" placeholder="Search...">
+                        </form>
+                    </li>
+                    <li class="navbar-right__item">
+                        <button class="navbar-right__button navbar-right__button_log-in">Log In</button>
+                    </li>
+                    <li class="navbar-right__item">
+                        <button class="navbar-right__button navbar-right__button_sign-up">Sign Up</button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <main class="main">
+        <aside class="side-bar">
+            <div class="container">
+                <div class="side-bar__inner">
+                    <a title="The Giant Pandas" class="side-bar__animals-card side-bar__animals-card_active">
+                        <svg class="side-bar__animals-photo-bg">
+                            <use href="#zoos-animals-bg"></use>
+                        </svg>
+                        <div class="side-bar__animals-photo-shape">
+                            <div class="side-bar__animals-photo side-bar__animals-photo_pandas"></div>
+                        </div>
+                        <h5 class="side-bar__animals-title">Pandas</h5>
+                    </a>
+                    <a title="Eagles" class="side-bar__animals-card">
+                        <svg class="side-bar__animals-photo-bg">
+                            <use href="#zoos-animals-bg"></use>
+                        </svg>
+                        <div class="side-bar__animals-photo-shape">
+                            <div class="side-bar__animals-photo side-bar__animals-photo_eagles"></div>
+                        </div>
+                        <h5 class="side-bar__animals-title">Eagles</h5>
+                    </a>
+                    <a title="Gorillas" class="side-bar__animals-card">
+                        <svg class="side-bar__animals-photo-bg">
+                            <use href="#zoos-animals-bg"></use>
+                        </svg>
+                        <div class="side-bar__animals-photo-shape">
+                            <div class="side-bar__animals-photo side-bar__animals-photo_gorillas"></div>
+                        </div>
+                        <h5 class="side-bar__animals-title">Gorillas</h5>
+                    </a>
+                    <a title="Alligators" class="side-bar__animals-card">
+                        <svg class="side-bar__animals-photo-bg">
+                            <use href="#zoos-animals-bg"></use>
+                        </svg>
+                        <div class="side-bar__animals-photo-shape">
+                            <div class="side-bar__animals-photo side-bar__animals-photo_alligators"></div>
+                        </div>
+                        <h5 class="side-bar__animals-title">Alligators</h5>
+                    </a>
+                </div>
+            </div>
+        </aside>
+    </main>
+
+    <!-- TODO: add links -->
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__inner">
+                <div class="navbar-left">
+                    <a href="#" class="logo">
+                        <span class="logo__text">online</span>
+                        <div class="logo__text-icon">
+                            <span class="logo__text_upper">z</span>
+                            <svg class="logo__elem">
+                                <use href="#logo-icon"></use>
+                            </svg>
+                        </div>
+                    </a>
+                    <nav class="nav">
+                        <ul class="nav__main-navbar">
+                            <li class="nav__item">
+                                <a href="#" class="nav__link">About</a>
+                            </li>
+                            <li class="nav__item">
+                                <a href="#" class="nav__link">Map</a>
+                            </li>
+                            <li class="nav__item">
+                                <a href="#" class="nav__link">Zoos</a>
+                            </li>
+                            <li class="nav__item">
+                                <a href="#" class="nav__link">Contact Us</a>
+                            </li>
+                            <li class="nav__item">
+                                <a href="#" class="nav__link">Design</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="copyright">
+                    <p class="copyright__text">Design by Lemeshko Kateryna</p>
+                    <p class="copyright__text">©RSSchool and ©Yem Digital 2021</p>
+                </div>
+            </div> <!-- footer__inner -->
+        </div> <!-- container -->
+    </footer>
+</body>
+
+</html>
