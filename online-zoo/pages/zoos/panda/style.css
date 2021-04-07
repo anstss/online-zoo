@@ -256,11 +256,28 @@ p {
           border-radius: 100px;
 }
 
+.main {
+  position: relative;
+}
+
 .main__inner {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  padding-left: 155px;
+}
+
+.side-bar-wrapper {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  -webkit-transform: translate(-740px);
+      -ms-transform: translate(-740px);
+          transform: translate(-740px);
+  z-index: 10;
+  width: 105px;
+  height: 2150px;
 }
 
 .side-bar {

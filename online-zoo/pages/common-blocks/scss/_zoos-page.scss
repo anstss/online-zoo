@@ -1,13 +1,28 @@
 // Main
 // ==========================================
 
+.main {
+    position: relative;
+}
+
 .main__inner {
     display: flex;
+    padding-left: 155px;
 }
 
 
 // Side bar
 // ==========================================
+
+.side-bar-wrapper {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-740px);
+    z-index: 10;
+    width: 105px;
+    height: 2150px;
+}
 
 .side-bar {
     position: sticky;

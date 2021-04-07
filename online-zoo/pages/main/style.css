@@ -400,6 +400,12 @@ p {
   transition: all 0.2s linear;
 }
 
+.button_intro:hover {
+  color: #000;
+  -webkit-box-shadow: 0px 2px 50px #b9d5d9;
+          box-shadow: 0px 2px 50px #b9d5d9;
+}
+
 .play-btn {
   position: absolute;
   top: 333px;
@@ -440,12 +446,6 @@ p {
   background: #F3F7F8;
   -webkit-animation: bordering 10s linear infinite;
           animation: bordering 10s linear infinite;
-}
-
-.intro__img:hover .button_intro {
-  color: #000;
-  -webkit-box-shadow: 0px 2px 50px #b9d5d9;
-          box-shadow: 0px 2px 50px #b9d5d9;
 }
 
 .intro__img:hover .play-btn {
