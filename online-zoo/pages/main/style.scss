@@ -975,4 +975,33 @@
     .pets-in-zoo__aside {
         padding-top: 230px;
     }
+
+
+// Pay and feed
+// ==========================================
+    .pay-and-feed {
+        background: no-repeat center top / 100% 564px url(../../assets/images/pay-and-feed-bg-1200.png);
+    }
+
+    .pay-and-feed__inner {
+        padding-top: 112px;
+    }
+
+    .pay-and-feed__cards {
+        padding-top: 80px;
+    }
+
+    .button_donate {
+        font-weight: 500;
+        padding: 8px 50px;
+    }
+
+    .pay-and-feed__card::before {
+        width: 168px;
+        left: 280px;
+    }
+
+    .pay-and-feed__card::after {
+        left: 448px;
+    }
 }
