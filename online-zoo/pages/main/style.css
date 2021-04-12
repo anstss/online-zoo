@@ -1335,5 +1335,73 @@ p {
   .how-it-works__card {
     width: 365px;
   }
+  .pets-in-zoo__inner {
+    padding-top: 50px;
+    padding-bottom: 58px;
+  }
+  .button_pets-in-zoo {
+    font-size: 16px;
+    line-height: 21px;
+    padding: 8px 20px;
+  }
+  .pets-in-zoo__favorite {
+    width: 18px;
+    height: 16px;
+  }
+  .pets-in-zoo__cards {
+    padding-top: 56px;
+  }
+  .pets-card {
+    width: 336px;
+    height: 248px;
+    margin-bottom: 30px;
+    padding-top: 25px;
+  }
+  .pets-card__photo-shape {
+    width: 156px;
+    height: 151px;
+    -webkit-mask-size: 156px 151px;
+            mask-size: 156px 151px;
+    margin-bottom: 25px;
+  }
+  .pets-card__photo-panda::before {
+    background: no-repeat center/auto 163px url(../../assets/images/pets-panda-min.jpg);
+  }
+  .pets-card__photo-eagles::before {
+    background: no-repeat center/auto 230px url(../../assets/images/pets-eagles-min.jpg);
+  }
+  .pets-card__photo-gorrilas::before {
+    background: no-repeat center/auto 170px url(../../assets/images/pets-gorillas-min.jpg);
+  }
+  .pets-card__photo-alligators::before {
+    background: no-repeat left 0 top 0/auto 170px url(../../assets/images/pets-alligators-min.jpg);
+  }
+  .pets-card__photo-elephants::before {
+    background: no-repeat center/auto 170px url(../../assets/images/pets-elephants-min.jpg);
+  }
+  .pets-card__photo-lemurs::before {
+    background: no-repeat center/auto 170px url(../../assets/images/pets-lemurs-min.jpg);
+  }
+  .pets-card__info {
+    padding: 18px 16px 21px;
+  }
+  .pets-card__title {
+    font-size: 16px;
+    line-height: 19px;
+  }
+  .pets-card__subtitle {
+    font-size: 13px;
+    line-height: 15px;
+  }
+  .pets-card__tv {
+    width: 22px;
+    height: 22px;
+  }
+  .pets-in-zoo__buttons {
+    margin-bottom: 160px;
+  }
+  .pets-in-zoo__aside {
+    padding-top: 230px;
+  }
 }
 /*# sourceMappingURL=style.css.map */
