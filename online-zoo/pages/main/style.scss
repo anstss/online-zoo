@@ -268,6 +268,7 @@
 // ==========================================
 
 .pets-in-zoo__inner {
+    position: relative;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -307,17 +308,18 @@
 }
 
 .pets-in-zoo__cards {
-    position: relative;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    width: 100%;
+    align-items: flex-end;
+    width: 95%;
     padding-top: 66px;
 }
 
 .pets-card {
     background-color: #fff;
-    width: 480px;
+    max-width: 455px;
+    width: 33%; //455
     height: 344px; //364px - 20px
     box-shadow: 0px 2px 30px rgba(0, 0, 0, 0.06);
     border-radius: 10px;
@@ -472,13 +474,10 @@
 }
 
 .pets-in-zoo__aside {
-    position: absolute;
     display: flex;
     flex-direction: column;
     align-items: center;
-    bottom: 33px;
-    right: -59px;
-    z-index: 1;
+    padding-top: 322px;
 }
 
 .pets-in-zoo__penguin {

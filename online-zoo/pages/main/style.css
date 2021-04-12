@@ -558,6 +558,7 @@ p {
 }
 
 .pets-in-zoo__inner {
+  position: relative;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -616,7 +617,6 @@ p {
 }
 
 .pets-in-zoo__cards {
-  position: relative;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -628,13 +628,18 @@ p {
   -webkit-justify-content: space-between;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  width: 100%;
+  -webkit-box-align: end;
+  -webkit-align-items: flex-end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  width: 95%;
   padding-top: 66px;
 }
 
 .pets-card {
   background-color: #fff;
-  width: 480px;
+  max-width: 455px;
+  width: 33%;
   height: 344px;
   -webkit-box-shadow: 0px 2px 30px rgba(0, 0, 0, 0.06);
           box-shadow: 0px 2px 30px rgba(0, 0, 0, 0.06);
@@ -822,7 +827,6 @@ p {
 }
 
 .pets-in-zoo__aside {
-  position: absolute;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -836,9 +840,7 @@ p {
   -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center;
-  bottom: 33px;
-  right: -59px;
-  z-index: 1;
+  padding-top: 322px;
 }
 
 .pets-in-zoo__penguin {
