@@ -806,3 +806,61 @@
 // ==========================================
 
 @import "../common-blocks/scss/footer";
+
+
+// Media
+// ====================================================================================
+
+//media queries for .container, header are in the appropriate files
+
+// media 1200px
+// ==========================================
+
+@media (max-width: 1200px) {
+
+// Intro
+//==============
+
+    .intro {
+        background: no-repeat center top / 100% 657px url(../../assets/images/intro-bg-1200.png);
+    }
+
+    .intro__title {
+        font-size: 64px;
+        line-height: 76px;
+    }
+
+    .intro__img {
+        width: 560px;
+        height: 464px;
+        background: no-repeat center / 560px 464px url(../../assets/images/intro-panda-layer.png),
+                    no-repeat -180px -11px / 840px auto url(../../assets/images/intro-panda.jpg);
+        mask-image: url(../../assets/images/intro-panda-shape.png);
+        mask-size: 560px 464px;
+    }
+
+    .play-btn {
+        top: 238px;
+        left: 267px;
+    }
+
+    .play-btn-bg {
+        width: 70px;
+        height: 50px;
+    }
+
+    .play-btn-icon {
+        top: 9px;
+        left: 25px;
+        width: 23px;
+        height: 27px;
+    }
+
+    .intro__img:hover {
+        + .intro__img-border {
+            width: 626px;
+            height: 518px;
+        }
+    }
+
+}
