@@ -98,6 +98,16 @@
     margin-right: 0;
 }
 
+.user-icon {
+    fill: #fff;
+    width: 56px;
+    height: 56px;
+}
+
+.navbar-right__item:nth-child(2) {
+    display: none;
+}
+
 .search {
     display: flex;
     flex-direction: row-reverse;
@@ -172,4 +182,26 @@
     height: 52px;
     border: 1px solid $white-color;
     border-radius: 100px;
+}
+
+
+// Media
+// ====================================================================================
+
+@media (max-width: 1200px) {
+
+    .navbar-right__item {
+        display: none;
+    }
+
+    .navbar-right__item:nth-child(1) {
+        display: block;
+        margin-right: 30px;
+    }
+
+    .navbar-right__item:nth-child(2) {
+        display: block;
+        margin-right: 0;
+    }
+
 }

@@ -71,3 +71,15 @@ $bamboo-color: #216E7A; //bamboo tree
     max-width: 1480px;
     margin: 0 auto;
 }
+
+
+// Media
+// ====================================================================================
+
+@media (max-width: 1200px) {
+    
+    .container {
+        max-width: 1140px;
+    }
+    
+}
