@@ -818,10 +818,11 @@
 
 @media (max-width: 1200px) {
 
-// Intro
-//==============
+/// Intro
+// ==========================================
 
     .intro {
+        height: 657px;
         background: no-repeat center top / 100% 657px url(../../assets/images/intro-bg-1200.png);
     }
 
@@ -863,4 +864,26 @@
         }
     }
 
+
+/// How it works
+// ==========================================
+
+    .how-it-works {
+        height: 780px;
+        margin-top: -20px;
+        background: no-repeat right 50px bottom 101px / 147px 280px url(../../assets/images/bamboo.svg),
+                no-repeat right 117px bottom 113px / 163px 155px url(../../assets/images/panda.svg),
+                no-repeat left 610px bottom 241px / 89px 158px url(../../assets/images/tree.svg),
+                no-repeat left 259px bottom 229px / 130px 230px url(../../assets/images/tree.svg),
+                no-repeat left bottom 241px / 116px 221px url(../../assets/images/bamboo.svg),
+                no-repeat center bottom / 100% 523px url(../../assets/images/how-it-works-bg-1200.png);
+    }
+
+    .how-it-works__title {
+        margin-bottom: 30px;
+    }
+
+    .how-it-works__card {
+        width: 365px;
+    }
 }
