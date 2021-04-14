@@ -1423,5 +1423,20 @@ p {
   .pay-and-feed__card::after {
     left: 448px;
   }
+  .testimonials__inner {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+  .button_leave-feedback {
+    font-size: 16px;
+    line-height: 21px;
+    padding: 8px 20px;
+  }
+  .testimonials__cards {
+    padding-top: 36px;
+  }
+  .testimonials__card {
+    width: 367px;
+  }
 }
 /*# sourceMappingURL=style.css.map */
