@@ -1009,7 +1009,7 @@
 // ==========================================
 
     .testimonials__inner {
-        padding-top: 50px;
+        padding-top: 62px;
         padding-bottom: 50px;
     }
 
@@ -1025,5 +1025,27 @@
 
     .testimonials__card {
         width: 367px;
+    }
+
+// Look at this beautiful animals
+// ==========================================
+
+    .beautiful-animals__inner {
+        padding-bottom: 50px;
+    }
+
+    .beautiful-animals__cards {
+        padding-top: 32px;
+        padding-right: 110px;
+    }
+
+    .beautiful-animals__card:last-child {
+        display: none;
+    }
+
+    .beautiful-animals__buttons {
+        top: 75px;
+        margin-right: 0;
+        margin-bottom: 0;
     }
 }
