@@ -441,3 +441,134 @@
     color: #000;
     filter: drop-shadow(0px 2px 20px rgba(185, 213, 217, 1));
 }
+
+
+// Media
+// ====================================================================================
+
+//media queries for .container, header, footer are in the appropriate files
+
+// media 1200px
+// ==========================================
+
+@media (max-width: 1200px) {
+
+    .main__inner {
+        padding-left: 135px;
+    }
+
+// Side bar
+//==============
+
+    .side-bar-wrapper {
+        height: 1625px;
+        transform: translate(-570px);
+    }
+
+    .side-bar__animals-card {
+        width: 80px;
+        padding-top: 7px;
+        padding-bottom: 7px;
+        margin-bottom: 39px;
+    }
+
+    .side-bar__animals-photo-bg {
+        width: 80px;
+        height: 77px;
+    }
+
+    .side-bar__animals-photo-shape {
+        width: 65px;
+        height: 63px;
+        mask-size: 65px 63px;
+    }
+
+    .side-bar__animals-title {
+        font-family: $font-roboto;
+        text-transform: none;
+        padding-top: 5px;
+    }
+
+
+// Zoos
+//==============
+    .zoos__inner {
+        padding-top: 30px;
+    }
+
+    .zoos__title-wrapper {
+        margin-right: 15px;
+        margin-bottom: 2px;
+    }
+
+
+// Main cameras
+//==============
+    .zoos__cameras-title {
+        margin-bottom: 15px;
+    }
+
+    .main-cameras {
+        margin-bottom: 26px;
+    }
+
+// Side cameras
+//==============
+
+    .zoos__side-cameras {
+        margin-bottom: 58px;
+    }
+
+    .zoos__cameras-title_side {
+        margin-bottom: 8px;
+    }
+
+    .side-cameras {
+        width: 295px;
+        height: 193px;
+        margin-right: 26px;
+    }
+
+    .iframe-plug {
+        width: 295px;
+        height: 193px;
+    }
+
+    
+// Information
+//==============
+    .info__elem {
+        width: 363px;
+    }
+
+    .info__text {
+        width: 363px;
+    }
+
+    .facts {
+        padding-left: 56px;
+    }
+
+    .fact {
+        width: 549px;
+    }
+
+
+// Donate
+//==============
+
+    .donate {
+        padding-top: 95px;
+        height: 346px;
+        background: no-repeat right 99px bottom 116px / 130px 230px url(../../../assets/images/tree.svg),
+                no-repeat right 374px bottom 62px / 147px 280px url(../../../assets/images/bamboo.svg),
+                no-repeat right 447px bottom 74px / 163px 155px url(../../../assets/images/panda.svg),
+                no-repeat left 140px bottom 66px / 130px 230px url(../../../assets/images/tree.svg),
+                no-repeat center bottom / 100% 346px url(../../../assets/images/zoos-bg-1200.png);
+    }
+
+    .donate__inner {
+        bottom: 34px;
+    }
+    
+}
