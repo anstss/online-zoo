@@ -224,3 +224,50 @@
 // ==========================================
 
 @import "../common-blocks/scss/footer";
+
+
+
+// Media
+// ====================================================================================
+
+//media queries for .container, header, footer are in the appropriate files
+
+// media 1200px
+// ==========================================
+
+@media (max-width: 1200px) {
+
+    .map__inner {
+        padding-top: 40px;
+    }
+
+    .map__world-map {
+        width: 1140px;
+        height: 685px;
+        margin-bottom: 60px;
+    }
+
+    .map__animals-card_eagles {
+        top: 373px;
+        left: 120px;
+    }
+
+    .map__animals-card_alligators {
+        top: 440px;
+        left: 253px;
+    }
+
+    .map__animals-card_gorillas {
+        top: 535px;
+        left: 550px;
+    }
+
+    .map__animals-card_pandas {
+        top: 436px;
+        left: 789px;
+    }
+
+    .map__buttons {
+        right: 11px;
+    }
+}
