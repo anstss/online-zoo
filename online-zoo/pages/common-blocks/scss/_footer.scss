@@ -28,3 +28,17 @@
 .copyright__text:last-child {
     margin-bottom: 0;
 }
+
+
+// Media
+// ====================================================================================
+
+@media (max-width: 1200px) {
+    .footer {
+        height: 120px;
+    }
+
+    .footer__inner {
+        padding-top: 17px;
+    }
+}

@@ -1289,6 +1289,15 @@ p {
 }
 
 @media (max-width: 1200px) {
+  .footer {
+    height: 120px;
+  }
+  .footer__inner {
+    padding-top: 17px;
+  }
+}
+
+@media (max-width: 1200px) {
   .intro {
     height: 657px;
     background: no-repeat center top/100% 657px url(../../assets/images/intro-bg-1200.png);
