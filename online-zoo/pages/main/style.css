@@ -1778,5 +1778,28 @@ p {
     font-size: 14px;
     line-height: 16px;
   }
+  .beautiful-animals__inner {
+    padding-bottom: 26px;
+  }
+  .beautiful-animals__cards {
+    padding-top: 25px;
+    padding-right: 74px;
+    margin-left: -15px;
+  }
+  .beautiful-animals__card {
+    display: none;
+  }
+  .beautiful-animals__card:nth-child(-n+4) {
+    display: block;
+  }
+  .beautiful-animals__subtitle {
+    bottom: 15px;
+  }
+  .beautiful-animals__buttons {
+    top: 64px;
+    margin-right: -10px;
+    margin-left: 0;
+    margin-bottom: 0;
+  }
 }
 /*# sourceMappingURL=style.css.map */
