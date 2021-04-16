@@ -3,6 +3,10 @@ body {
   background-color: #f6f9fa;
 }
 
+body._lock {
+  overflow: hidden;
+}
+
 h1, h2, h3, h4, h5, h6 {
   margin: 0;
 }
@@ -120,6 +124,10 @@ p {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+}
+
+.nav__item:last-child {
+  display: none;
 }
 
 .nav__link {
@@ -278,6 +286,10 @@ p {
           border-radius: 100px;
 }
 
+.burger-menu {
+  display: none;
+}
+
 @media (max-width: 1200px) {
   .nav__link {
     margin-right: 42px;
@@ -315,7 +327,41 @@ p {
     height: 11px;
   }
   .nav {
-    display: none;
+    position: fixed;
+    top: 78px;
+    right: -100%;
+    width: 100%;
+    z-index: 13;
+    text-align: center;
+    background-color: #2A8086;
+    border-top: 1px solid rgba(18, 87, 91, 0.25);
+    padding-top: 34px;
+    padding-bottom: 38px;
+    -webkit-transition: all 0.2s linear;
+    -o-transition: all 0.2s linear;
+    transition: all 0.2s linear;
+  }
+  .nav._active {
+    right: 0;
+  }
+  .nav__main-navbar {
+    display: block;
+  }
+  .nav__item {
+    margin-bottom: 32px;
+  }
+  .nav__item:last-child {
+    display: block;
+  }
+  .nav__item:last-child {
+    margin-bottom: 0;
+  }
+  .nav__link {
+    margin-right: 0;
+    color: #F3F7F8;
+  }
+  .nav__link_active {
+    border: none;
   }
   .navbar-right {
     display: none;
@@ -348,15 +394,37 @@ p {
   }
   .burger-menu::before {
     top: 8px;
+    -webkit-transition: all 0.2s linear;
+    -o-transition: all 0.2s linear;
+    transition: all 0.2s linear;
   }
   .burger-menu::after {
     bottom: 9px;
+    -webkit-transition: all 0.2s linear;
+    -o-transition: all 0.2s linear;
+    transition: all 0.2s linear;
   }
   .burger-menu__icon {
     top: 50%;
     -webkit-transform: translate(-50%, -50%);
         -ms-transform: translate(-50%, -50%);
             transform: translate(-50%, -50%);
+    -webkit-transition: all 0.2s linear;
+    -o-transition: all 0.2s linear;
+    transition: all 0.2s linear;
+  }
+  .burger-menu._active .burger-menu__icon {
+    opacity: 0;
+  }
+  .burger-menu._active::before {
+    -webkit-transform: rotate(-45deg) translate(-50%);
+        -ms-transform: rotate(-45deg) translate(-50%);
+            transform: rotate(-45deg) translate(-50%);
+  }
+  .burger-menu._active::after {
+    -webkit-transform: rotate(45deg) translate(-50%);
+        -ms-transform: rotate(45deg) translate(-50%);
+            transform: rotate(45deg) translate(-50%);
   }
 }
 

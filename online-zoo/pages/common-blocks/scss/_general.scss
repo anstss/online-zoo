@@ -3,6 +3,10 @@ body {
     background-color: #f6f9fa;
 }
 
+body._lock {
+    overflow: hidden;
+}
+
 
 // Reset
 // ==========================================
