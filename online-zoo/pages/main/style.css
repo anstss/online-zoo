@@ -1575,6 +1575,10 @@ p {
     -webkit-mask-size: 255px 211px;
             mask-size: 255px 211px;
   }
+  .intro__img-border {
+    top: 37px;
+    margin-right: -10px;
+  }
   .button {
     font-size: 14px;
     line-height: 18px;
@@ -1624,6 +1628,11 @@ p {
   .intro__img:hover + .intro__img-border {
     width: 275px;
     height: 231px;
+  }
+  .intro__img:hover .play-btn {
+    -webkit-transform: translate(-50%, -50%) scale(1.2);
+        -ms-transform: translate(-50%, -50%) scale(1.2);
+            transform: translate(-50%, -50%) scale(1.2);
   }
   .how-it-works {
     height: 534px;

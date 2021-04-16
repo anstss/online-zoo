@@ -1104,6 +1104,11 @@
         mask-size: 255px 211px;
     }
 
+    .intro__img-border {
+        top: 37px;
+        margin-right: -10px;
+    }
+
 // Buttons
 //==============
 
@@ -1157,6 +1162,10 @@
         + .intro__img-border {
             width: 275px;
             height: 231px;
+        }
+
+        .play-btn {
+            transform: translate(-50%, -50%) scale(1.2);
         }
     }
 
