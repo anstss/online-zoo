@@ -1199,4 +1199,80 @@
         height: 44px;
     }
 
+
+// Pets in zoo
+// ==========================================
+
+    .pets-in-zoo__inner {
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+
+    .pets-in-zoo__cards {
+        padding-top: 30px;
+        padding-left: 10px;
+        width: 532px;
+    }
+
+    .pets-card {
+        display: none;
+        position: relative;
+        width: 256px;
+        height: 273px;
+        margin-bottom: 20px;
+    }
+
+    .pets-card:nth-child(-n+4) {
+        display: block;
+    }
+
+    .pets-card__photo-shape {
+        width: 170px;
+        height: 164px;
+        mask-size: 170px 164px;
+    }
+
+    .pets-card__photo-panda::before {
+        background: no-repeat center / auto 164px url(../../assets/images/pets-panda-min.jpg);
+    }
+    
+    .pets-card__photo-eagles::before {
+        background: no-repeat center / auto 256px url(../../assets/images/pets-eagles-min.jpg);
+    }
+    
+    .pets-card__photo-gorrilas::before {
+        background: no-repeat center / auto 200px url(../../assets/images/pets-gorillas-min.jpg);
+    }
+    
+    .pets-card__photo-alligators::before {
+        background: no-repeat left 0 top 0 / auto 200px url(../../assets/images/pets-alligators-min.jpg);
+    }
+    
+    .pets-card__photo-elephants::before {
+        background: no-repeat center / auto 200px url(../../assets/images/pets-elephants-min.jpg);
+    }
+    
+    .pets-card__photo-lemurs::before {
+        background: no-repeat center / auto 200px url(../../assets/images/pets-lemurs-min.jpg);
+    }
+
+    .pets-card__info {
+        padding: 9px 21px;
+    }
+
+    .pets-card__tv {
+        width: 24px;
+        height: 24px;
+        position: absolute;
+        top: 16px;
+        right: 19px;
+    }
+
+    .pets-in-zoo__buttons {
+        margin-bottom: 179px;
+    }
+
+    .pets-in-zoo__aside {
+        padding-top: 263px;
+    }
 }
