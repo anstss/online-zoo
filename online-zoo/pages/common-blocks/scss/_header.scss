@@ -212,3 +212,83 @@
     }
 
 }
+
+// media 640px
+// ==========================================
+
+@media (max-width: 640px) {
+
+    .header {
+        height: 78px;
+    }
+
+    .header__inner {
+        padding-top: 20px;
+    }
+
+// Logo
+//==============
+
+    .logo {
+        width: 49px;
+        font-size: 16px;
+        line-height: 19px;
+    }
+
+    .logo__elem {
+        width: 32px;
+        height: 11px;
+    }
+
+// Nav
+//==============
+    .nav {
+        display: none;
+    }
+
+    .navbar-right {
+        display: none;
+    }
+
+// Burger-menu
+//==============
+    .burger-menu {
+        position: relative;
+        z-index: 10;
+        display: block;
+        width: 35px;
+        height: 35px;
+        cursor: pointer;
+    }
+
+    .burger-menu__icon,
+    .burger-menu::before,
+    .burger-menu::after {
+        position: absolute;
+        left: 50%;
+        transform: translate(-50%);
+        width: 23px;
+        height: 2px;
+        border-radius: 25%;
+        background-color: $white-color;
+    }
+
+    .burger-menu::before,
+    .burger-menu::after {
+        content: "";
+    }
+
+    .burger-menu::before {
+        top: 8px;
+    }
+
+    .burger-menu::after {
+        bottom: 9px;
+    }
+
+    .burger-menu__icon {
+        top: 50%;
+        transform: translate(-50%, -50%);
+    }
+    
+}

@@ -295,6 +295,68 @@ p {
   }
 }
 
+@media (max-width: 640px) {
+  .header {
+    height: 78px;
+  }
+  .header__inner {
+    padding-top: 20px;
+  }
+  .logo {
+    width: 49px;
+    font-size: 16px;
+    line-height: 19px;
+  }
+  .logo__elem {
+    width: 32px;
+    height: 11px;
+  }
+  .nav {
+    display: none;
+  }
+  .navbar-right {
+    display: none;
+  }
+  .burger-menu {
+    position: relative;
+    z-index: 10;
+    display: block;
+    width: 35px;
+    height: 35px;
+    cursor: pointer;
+  }
+  .burger-menu__icon,
+  .burger-menu::before,
+  .burger-menu::after {
+    position: absolute;
+    left: 50%;
+    -webkit-transform: translate(-50%);
+        -ms-transform: translate(-50%);
+            transform: translate(-50%);
+    width: 23px;
+    height: 2px;
+    -webkit-border-radius: 25%;
+            border-radius: 25%;
+    background-color: #C5E1E5;
+  }
+  .burger-menu::before,
+  .burger-menu::after {
+    content: "";
+  }
+  .burger-menu::before {
+    top: 8px;
+  }
+  .burger-menu::after {
+    bottom: 9px;
+  }
+  .burger-menu__icon {
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+  }
+}
+
 .error-page {
   position: relative;
   width: 100%;
