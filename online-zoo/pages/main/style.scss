@@ -178,6 +178,9 @@
     }
 }
 
+.button_intro-donate {
+    display: none;
+}
 
 // How it works
 // ==========================================
@@ -831,6 +834,11 @@
         line-height: 76px;
     }
 
+    .intro__title_bold {
+        font-size: 48px;
+        line-height: 57px;
+    }
+
     .intro__img {
         width: 560px;
         height: 464px;
@@ -1052,4 +1060,143 @@
         margin-bottom: 0;
     }
     
+}
+
+
+// media 640px
+// ==========================================
+
+@media (max-width: 640px) {
+    
+    .intro {
+        height: 405px;
+        background: no-repeat center top / 100% 405px url(../../assets/images/intro-bg-640.png);
+    }
+
+    .intro__content {
+        margin-top: 29px;
+    }
+
+    .intro__title {
+        width: 324px;
+        font-size: 36px;
+        line-height: 43px;
+        margin-right: 20px;
+        margin-bottom: 20px;
+    }
+
+    .intro__title_bold {
+        font-size: 30px;
+        line-height: 36px;
+    }
+
+    .intro__subtitle {
+        width: 290px;
+        margin-bottom: 31px;
+    }
+
+    .intro__img {
+        width: 255px;
+        height: 211px;
+        background: no-repeat center / 255px 211px url(../../assets/images/intro-panda-layer.png),
+                    no-repeat -82px -11px / 383px auto url(../../assets/images/intro-panda.jpg);
+        mask-image: url(../../assets/images/intro-panda-shape.png);
+        mask-size: 255px 211px;
+    }
+
+// Buttons
+//==============
+
+    .button {
+        font-size: 14px;
+        line-height: 18px;
+    }
+
+    .button_intro {
+        padding: 10px 50px;
+    }
+
+    .button_intro-donate {
+        display: inline-flex;
+        padding: 10px 58px;
+        letter-spacing: 0.1em;
+        color: $black-color;
+        background-color: $white-color;
+        filter: drop-shadow(0px 2px 20px rgba(185, 213, 217, 0.6));
+
+        margin-left: 15px;
+
+        transition: all 0.2s linear;
+    }
+
+    .button_intro-donate:hover {
+        color: #000;
+        background-color: #fff;
+        filter: drop-shadow(0px 2px 20px rgba(185, 213, 217, 1));
+    }
+
+    .play-btn {
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    .play-btn-bg {
+        width: 55px;
+        height: 35px;
+    }
+
+    .play-btn-icon {
+        top: 7px;
+        left: 20px;
+        width: 16px;
+        height: 20px;
+    }
+
+    .intro__img:hover {
+        + .intro__img-border {
+            width: 275px;
+            height: 231px;
+        }
+    }
+
+
+/// How it works
+// ==========================================
+
+    .how-it-works {
+        height: 534px;
+        margin-top: -30px;
+        background: no-repeat right 114px bottom 56px / 82px 156px url(../../assets/images/bamboo.svg),
+                no-repeat right 155px bottom 63px / 91px 86px url(../../assets/images/panda.svg),
+                no-repeat left 225px bottom 134px / 50px 88px url(../../assets/images/tree.svg),
+                no-repeat left 30px bottom 127px / 72px 123px url(../../assets/images/tree.svg),
+                no-repeat center bottom / 100% 291px url(../../assets/images/how-it-works-bg-600.png);
+    }
+
+    .section-title {
+        font-size: 18px;
+        line-height: 21px;
+    }
+
+    .how-it-works__card {
+        width: 188px;
+    }
+    
+    .how-it-works__icon-bg {
+        width: 113px;
+        height: 113px;
+    }
+
+    .how-it-works__binoculars {
+        width: 40px;
+        height: 40px;
+    }
+
+    .how-it-works__heart-paw,
+    .how-it-works__trust {
+        width: 44px;
+        height: 44px;
+    }
+
 }
