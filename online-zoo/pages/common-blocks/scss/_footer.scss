@@ -45,3 +45,29 @@
         padding-top: 17px;
     }
 }
+
+
+// media 640px
+// ==========================================
+
+@media (max-width: 640px) {
+
+    .footer {
+        height: 78px;
+    }
+
+    .footer__inner {
+        padding-top: 22px;
+
+        .nav {
+            display: none;
+        }
+    }
+
+    .copyright__text {
+        font-size: 10px;
+        line-height: 12px;
+        margin-bottom: 4px;
+    }
+
+}

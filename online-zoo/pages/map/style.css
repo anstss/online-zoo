@@ -617,6 +617,23 @@ p {
   }
 }
 
+@media (max-width: 640px) {
+  .footer {
+    height: 78px;
+  }
+  .footer__inner {
+    padding-top: 22px;
+  }
+  .footer__inner .nav {
+    display: none;
+  }
+  .copyright__text {
+    font-size: 10px;
+    line-height: 12px;
+    margin-bottom: 4px;
+  }
+}
+
 @media (max-width: 1200px) {
   .map__inner {
     padding-top: 40px;

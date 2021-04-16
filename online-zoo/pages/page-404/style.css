@@ -472,6 +472,23 @@ p {
   }
 }
 
+@media (max-width: 640px) {
+  .footer {
+    height: 78px;
+  }
+  .footer__inner {
+    padding-top: 22px;
+  }
+  .footer__inner .nav {
+    display: none;
+  }
+  .copyright__text {
+    font-size: 10px;
+    line-height: 12px;
+    margin-bottom: 4px;
+  }
+}
+
 @media (max-width: 1200px) {
   .error-page {
     background: no-repeat left 347px bottom 64px/33px 65px url(../../assets/images/penguin.svg), no-repeat right 94px bottom 38px/130px 230px url(../../assets/images/tree.svg), no-repeat right 338px bottom 107px/147px 280px url(../../assets/images/bamboo.svg), no-repeat right 405px bottom 117px/163px 155px url(../../assets/images/panda.svg), no-repeat left 30px bottom 154px/130px 230px url(../../assets/images/tree.svg), no-repeat center bottom/100% 346px url(../../assets/images/zoos-bg-1200.png);
