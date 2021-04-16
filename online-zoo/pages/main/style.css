@@ -361,7 +361,6 @@ p {
 }
 
 .intro {
-  margin-top: 78px;
   width: 100%;
   height: 795px;
   background: no-repeat center top/100% 795px url(../../assets/images/intro-bg.png);
@@ -1566,6 +1565,7 @@ p {
 
 @media (max-width: 640px) {
   .intro {
+    margin-top: 78px;
     height: 405px;
     background: no-repeat center top/100% 405px url(../../assets/images/intro-bg-640.png);
   }
