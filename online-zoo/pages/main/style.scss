@@ -1314,4 +1314,62 @@
         left: 186px;
     }
 
+
+// Testimonials
+// ==========================================
+
+    .testimonials__inner {
+        padding-top: 50px;
+    }
+
+    .testimonials__leave-feedback {
+        width: 20px;
+        height: 20px;
+        margin-right: 14px;
+    }
+
+    .testimonials__cards {
+        padding-top: 27px;
+    }
+
+    .testimonials__card {
+        display: none;
+    }
+
+    .testimonials__card:nth-child(-n+2) {
+        display: block;
+        width: 290px;
+    }
+
+    .testimonials__text {
+        height: 132px;
+        padding: 18px;
+    }
+
+    .testimonials__card::after {
+        top: 132px;
+        left: 40px;
+    }
+    
+
+    .testimonials__date {
+        font-size: 12px;
+        line-height: 14px;
+    }
+
+    .testimonials__feedback {
+        font-size: 14px;
+        line-height: 20px;
+    }
+
+    .testimonials__user-photo {
+        width: 40px;
+        height: 40px;
+    }
+
+    .testimonials__user-photo {
+        font-size: 14px;
+        line-height: 16px;
+    }
+
 }
