@@ -501,6 +501,10 @@ p {
   transition: all 0.2s linear;
 }
 
+.tooltip__button {
+  display: none;
+}
+
 .map__animals-tooltip {
   position: relative;
   width: 410px;
@@ -732,6 +736,129 @@ p {
   }
   .map__buttons {
     right: 11px;
+  }
+}
+
+@media (max-width: 640px) {
+  .map {
+    margin-top: 78px;
+  }
+  .map__inner {
+    padding-top: 30px;
+  }
+  .map__world-map {
+    width: 559px;
+    height: 397px;
+    margin-bottom: 50px;
+  }
+  .map__title {
+    font-size: 18px;
+    line-height: 21px;
+  }
+  .map__animals-photo-bg {
+    width: 60px;
+    height: 62px;
+  }
+  .map__map-pets-bg {
+    width: 60px;
+    height: 62px;
+  }
+  .map__animals-photo {
+    width: 52px;
+    height: 50px;
+    left: 4px;
+    -webkit-mask-size: 52px 50px;
+            mask-size: 52px 50px;
+  }
+  .map__animals-photo_eagles {
+    background: no-repeat center url(../../assets/images/pets-layer.png), no-repeat left -50px bottom -12px/130px auto url(../../assets/images/pets-eagles-min.jpg);
+  }
+  .map__animals-photo_alligators {
+    background: no-repeat center url(../../assets/images/pets-layer.png), no-repeat left 0 bottom 0/92px auto url(../../assets/images/pets-alligators-min.jpg);
+  }
+  .map__animals-photo_gorillas {
+    background: no-repeat center url(../../assets/images/pets-layer.png), no-repeat center/86px auto url(../../assets/images/pets-gorillas-min.jpg);
+  }
+  .map__animals-photo_pandas {
+    background: no-repeat center url(../../assets/images/pets-layer.png), no-repeat center/76px auto url(../../assets/images/pets-panda-min.jpg);
+  }
+  .map__animals-card_eagles {
+    position: absolute;
+    top: 268px;
+    left: 40px;
+  }
+  .map__animals-card_alligators {
+    position: absolute;
+    top: 305px;
+    left: 120px;
+  }
+  .map__animals-card_gorillas {
+    position: absolute;
+    top: 340px;
+    left: 270px;
+  }
+  .map__animals-card_pandas {
+    position: absolute;
+    top: 280px;
+    left: 395px;
+  }
+  .map__animals-tooltip {
+    width: 194px;
+    height: 122px;
+  }
+  .map__animals-tooltip::after {
+    top: 121px;
+    left: 82px;
+  }
+  .tooltip {
+    top: -140px;
+    left: -70px;
+  }
+  .map__animals-tooltip-info {
+    padding: 20px 12px;
+    text-align: center;
+  }
+  .map__animals-tooltip-text {
+    font-size: 10px;
+    line-height: 200%;
+  }
+  .map__animals-tooltip-text:last-child {
+    margin-bottom: 15px;
+  }
+  .tooltip__button {
+    display: none;
+    position: relative;
+    top: -135px;
+    left: -50px;
+    width: 101px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: #19707D;
+    border: 1.5px solid #19707D;
+    -webkit-border-radius: 100px;
+            border-radius: 100px;
+    padding: 8px 25px;
+    cursor: pointer;
+    -webkit-transition: all 0.2s linear;
+    -o-transition: all 0.2s linear;
+    transition: all 0.2s linear;
+  }
+  .tooltip__button-eagles {
+    left: -30px;
+  }
+  .tooltip__button:hover {
+    background-color: #19707D;
+    color: #fff;
+  }
+  .map__animals-card_eagles .tooltip {
+    left: -50px;
+  }
+  .map__animals-card:hover ~ .tooltip__button {
+    display: block;
   }
 }
 /*# sourceMappingURL=style.css.map */
