@@ -315,7 +315,7 @@
     transition: all 0.2s linear;
 }
 
-.button-next{
+.button-next {
     padding: 15px 17px 15px 19px;
 }
 
@@ -504,6 +504,7 @@
 
 // Main cameras
 //==============
+
     .zoos__cameras-title {
         margin-bottom: 15px;
     }
@@ -537,6 +538,7 @@
     
 // Information
 //==============
+
     .info__elem {
         width: 363px;
     }
@@ -570,5 +572,236 @@
     .donate__inner {
         bottom: 34px;
     }
+
+}
+
+
+// media 640px
+// ==========================================
+
+@media (max-width: 640px) {
+
+    .main {
+        margin-top: 78px;
+    }
+
+    .main__inner {
+        padding-left: 69px;
+    }
+
+// Side bar
+// ==========================================
+
+    .side-bar-wrapper {
+        width: 89px;
+        transform: translate(-300px);
+        height: 1520px;
+        // padding: 0 20px;
+    }
+
+    .side-bar {
+        top: 100px;
+    }
+
+    .side-bar__inner {
+        width: 89px;
+        margin-top: 20px;
+        margin-right: 0;
+    }
+
+    .side-bar__animals-card {
+        width: 49px;
+        padding-bottom: 4px;
+        padding-top: 4px;
+        margin-bottom: 30px;
+    }
+
+    .side-bar__animals-photo-bg {
+        width: 49px;
+        height: 49px;
+    }
+
+    .side-bar__animals-photo-shape {
+        width: 41px;
+        height: 40px;
+        mask-size: 41px 40px;
+    }
+
+    .side-bar__animals-photo_pandas::before {
+        background: no-repeat center top 10px / 70px auto url(../../../assets/images/pets-panda-min.jpg);
+    }
     
+    .side-bar__animals-photo_eagles::before {
+        background: no-repeat right -17px center / 111px auto url(../../../assets/images/pets-eagles-min.jpg);
+    }
+    
+    .side-bar__animals-photo_gorillas::before {
+        background: no-repeat right -5px top 10px / 80px auto url(../../../assets/images/pets-gorillas-min.jpg);
+    }
+    
+    .side-bar__animals-photo_alligators::before {
+        background: no-repeat left 6px bottom 7px / 86px auto url(../../../assets/images/pets-alligators-min.jpg);
+    }
+
+    .side-bar__animals-title {
+        font-size: 12px;
+        line-height: 14px;
+        font-weight: 400;
+        padding-top: 0;
+    }
+
+// Zoos
+// ==========================================
+
+    .zoos__inner {
+        padding-top: 20px;
+    }
+
+    .zoos__title-wrapper {
+        margin-bottom: 0;
+        margin-right: 8px;
+    }
+
+    .zoos__title {
+        font-size: 18px;
+        line-height: 21px;
+    }
+
+// Buttons
+//==============
+
+    .zoos__button {
+        margin-top: 3px;
+    }
+
+    .zoos__button {
+        font-size: 20px;
+        line-height: 24px;
+
+        width: 31px;
+        height: 31px;
+
+        margin-left: 24px;
+    }
+
+    .zoos__button-favorite-icon {
+        width: 20px;
+        height: 20px;
+        padding-top: 6px;
+    }
+
+// Main cameras
+//==============
+
+    .zoos__cameras-title {
+        font-size: 14px;
+        line-height: 17px;
+
+        margin-top: -10px;
+        margin-bottom: 11px;
+    }
+
+    .main-cameras {
+        width: 531px;
+        height: 314px;
+        margin-bottom: 20px;
+    }
+
+// Side cameras
+//==============
+    .zoos__side-cameras-wrapper {
+        margin-top: -5px;
+    }
+
+    .zoos__side-cameras {
+        margin-bottom: 46px;
+    }
+
+    .iframe-wrapper {
+        display: none;
+    }
+
+    .iframe-wrapper:nth-child(-n+2) {
+        display: block;
+    }
+
+    .side-cameras {
+        width: 235px;
+        height: 154px;
+        margin-right: 9px;
+        margin-bottom: 0;
+    }
+
+    .iframe-live {
+        top: 18px;
+        left: 21px;
+        width: 48px;
+        height: 22px;
+        font-size: 9px;
+        line-height: 11px;
+    }
+
+    .iframe-plug {
+        width: 235px;
+        height: 154px;
+    }
+
+// Information
+//==============
+
+    .information__inner {
+        flex-wrap: wrap;
+    }
+
+    .information__title {
+        font-size: 18px;
+        line-height: 21px;
+        margin-bottom: 20px;
+    }
+
+    .info__elem {
+        width: 510px;
+        margin-bottom: 24px;
+    }
+
+    .info__subtitle {
+        margin-bottom: 4px;
+    }
+
+    .info__text {
+        width: 510px;
+    }
+
+    .facts {
+        padding-left: 0;
+    }
+
+    .fact {
+        width: 510px;
+    }
+
+// Donate
+//==============
+
+    .donate {
+        padding-top: 0;
+        height: 310px;
+        background: no-repeat right -18px bottom 132px / 89px 157px url(../../../assets/images/tree.svg),
+                no-repeat left 305px bottom 84px / 103px 196px url(../../../assets/images/bamboo.svg),
+                no-repeat left 247px bottom 92px / 114px 108px url(../../../assets/images/panda.svg),
+                no-repeat left -40px top 47px / 130px 230px url(../../../assets/images/tree.svg),
+                no-repeat center bottom / 100% 310px url(../../../assets/images/zoos-bg-640.png);
+    }
+
+    .donate__inner {
+        bottom: 44px;
+    }
+
+    .button_donate {
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 18px;
+        padding: 14px 50px;
+    }
+
 }
