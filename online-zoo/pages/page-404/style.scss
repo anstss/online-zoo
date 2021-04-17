@@ -104,3 +104,33 @@
     }
 
 }
+
+
+// media 640px
+// ==========================================
+
+@media (max-width: 640px) {
+
+    .error-page {
+        margin-top: 78px;
+        height: 720px;
+        background: no-repeat left 200px bottom 74px / 33px 65px url(../../assets/images/penguin.svg),
+                no-repeat right -18px bottom 132px / 89px 157px url(../../assets/images/tree.svg),
+                no-repeat left 375px bottom 84px / 103px 196px url(../../assets/images/bamboo.svg),
+                no-repeat left 317px bottom 92px / 114px 108px url(../../assets/images/panda.svg),
+                no-repeat left -40px bottom 47px / 130px 230px url(../../assets/images/tree.svg),
+                no-repeat center bottom / 100% 310px url(../../assets/images/zoos-bg-640.png);
+    }
+
+    .error-page__inner {
+        padding-top: 50px;
+    }
+
+    .error-page__title {
+        font-size: 150px;
+    }
+
+    .error-page__message {
+        font-size: 14px;
+    }
+}
