@@ -804,6 +804,10 @@
     margin-bottom: 0;
 }
 
+.slider-button_all {
+    display: none;
+}
+
 
 // Footer
 // ==========================================
@@ -1415,4 +1419,289 @@
         margin-bottom: 0;
     }
 
+}
+
+
+// media 320px
+// ==========================================
+
+@media (max-width: 320px) {
+
+    .intro {
+        margin-top: 49px;
+        height: 508px;
+        background-color: $bg-color;
+        border-bottom: 23px solid $white-color;
+
+        overflow: hidden;
+    }
+
+    .intro__inner {
+        position: relative;
+    }
+
+    .intro__content {
+        margin-top: 0;
+    }
+
+    .intro__img {
+        position: absolute;
+        top: 20px;
+        left: 50%;
+        transform: translate(-50%);
+    }
+
+    .intro__img-border {
+        top: 15px;
+        margin-right: 10px;
+    }
+
+    .intro__title {
+        margin-top: 247px;
+        font-size: 32px;
+        line-height: 38px;
+        margin-bottom: 18px;
+    }
+
+    .intro__title_bold {
+        font-size: 28px;
+        line-height: 33px;
+    }
+
+    .intro__subtitle {
+        // width: 100%;
+        margin-bottom: 18px;
+    }
+
+// Buttons
+//==============
+
+    .button_intro {
+        padding: 10px 35px;
+    }
+
+    .button_intro-donate {
+        padding: 10px 38px;
+        margin-left: 20px;
+    }
+
+
+/// How it works
+// ==========================================
+
+    .how-it-works {
+        margin-top: 0;
+        height: 967px;
+        background: no-repeat left 207px bottom 56px / 82px 156px url(../../assets/images/bamboo.svg),
+                no-repeat left 160px bottom 63px / 91px 86px url(../../assets/images/panda.svg),
+                no-repeat left -9px bottom 134px / 50px 88px url(../../assets/images/tree.svg),
+                no-repeat center bottom / 100% 291px url(../../assets/images/how-it-works-bg-320.png);
+    }
+
+    .how-it-works__inner {
+        padding-top: 32px;
+        justify-content: center;
+    }
+
+    .how-it-works__title {
+        margin-bottom: 20px;
+    }
+
+    .how-it-works__card {
+        margin-bottom: 24px;
+    }
+
+
+// Pets in zoo
+// ==========================================
+
+    .pets-in-zoo {
+        height: 817px;
+    }
+
+    .pets-in-zoo__inner {
+        position: relative;
+        padding-top: 10px;
+    }
+
+    .pets-in-zoo__title {
+        margin-bottom: 22px;
+    }
+
+    .pets-in-zoo__cards {
+        width: 240px;
+        padding-top: 0;
+        padding-left: 0;
+    }
+
+    .pets-card:nth-child(-n+4) {
+        display: none;
+    }
+
+    .pets-card:nth-child(-n+2) {
+        display: block;
+    }
+
+    .pets-card {
+        width: 240px;
+        height: 260px;
+        padding-top: 49px;
+        margin-bottom: 20px;
+    }
+
+    .pets-card__photo-shape {
+        width: 153px;
+        height: 147px;
+        mask-size: 153px 147px;
+    }
+
+    .pets-card__info {
+        padding: 10px 10px;
+    }
+
+    .pets-card__title {
+        font-size: 17px;
+        line-height: 20px;
+        margin-bottom: 10px;
+    }
+
+    .pets-in-zoo__buttons {
+        margin-bottom: 0;
+    }
+
+    .pets-in-zoo__aside {
+        padding-top: 0;
+    }
+
+    .pets-in-zoo__penguin {
+        display: none;
+    }
+
+    .button_pets-in-zoo {
+        position: absolute;
+        bottom: -40px;
+    }
+
+
+// Pay and feed
+// ==========================================
+
+    .pay-and-feed {
+        position: relative;
+        height: 905px;
+        background: no-repeat center top / 100% 905px url(../../assets/images/pay-and-feed-bg-320.png);
+    }
+
+    .pay-and-feed__inner {
+        padding-top: 50px;
+    }
+
+    .pay-and-feed__title {
+        padding-left: 0;
+    }
+
+    .pay-and-feed__cards {
+        padding-top: 22px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .pay-and-feed__card {
+        margin-bottom: 74px;
+    }
+
+    .pay-and-feed__card::after {
+        top: 115%;
+        left: 50%;
+        transform: translate(-50%) rotate(90deg);
+    }
+
+    .button_donate {
+        position: absolute;
+        left: 10px;
+        bottom: 94px;
+
+        padding: 11px 72px;
+    }
+
+// Testimonials
+// ==========================================
+
+    .testimonials__inner {
+        position: relative;
+        height: 698px;
+        margin-top: 32px;
+        padding-top: 0;
+    }
+
+    .testimonials__title {
+        margin-bottom: 30px;
+    }
+
+    .testimonials__cards {
+        flex-wrap: wrap;
+        padding-top: 0;
+        margin-top: 0;
+    }
+
+    .testimonials__card:nth-child(-n+2),
+    .testimonials__card {
+        display: block;
+        width: 300px;
+        margin-bottom: 24px;
+    }
+
+    .button_leave-feedback {
+        position: absolute;
+        bottom: 15px;
+    }
+
+    .button_leave-feedback {
+        padding: 9px 62px;
+    }
+
+
+// Look at this beautiful animals
+// ==========================================
+
+    .beautiful-animals {
+        height: 407px;
+        margin-top: 30px;
+    }
+
+    .beautiful-animals__inner {
+        position: relative;
+    }
+
+    .beautiful-animals__cards {
+        flex-wrap: wrap;
+        padding-right: 0;
+        margin-left: 0;
+    }
+
+    .beautiful-animals__card {
+        display: block;
+        margin-bottom: 24px;
+        width: 100px;
+    }
+
+    .beautiful-animals__buttons {
+        position: absolute;
+        top: 322px;
+        left: 50%;
+        transform: translate(-50%);
+        // bottom: 0;
+        margin-right: 0;
+    }
+
+    .slider-button_hidden {
+        display: none;
+    }
+
+    .slider-button_all {
+        display: block;
+        transform: rotate(90deg);
+        left: 50%;
+        margin-top: 12px;
+    }
 }

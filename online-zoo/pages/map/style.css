@@ -63,6 +63,12 @@ p {
   }
 }
 
+@media (max-width: 320px) {
+  .container {
+    max-width: 300px;
+  }
+}
+
 .header {
   background-color: #2A8086;
   width: 100%;
@@ -425,6 +431,18 @@ p {
     -webkit-transform: rotate(45deg) translate(-50%);
         -ms-transform: rotate(45deg) translate(-50%);
             transform: rotate(45deg) translate(-50%);
+  }
+}
+
+@media (max-width: 320px) {
+  .header {
+    height: 50px;
+  }
+  .header__inner {
+    padding-top: 7px;
+  }
+  .nav {
+    top: 49px;
   }
 }
 

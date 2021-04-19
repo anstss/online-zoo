@@ -362,3 +362,26 @@
     }
     
 }
+
+
+// media 320px
+// ==========================================
+
+@media (max-width: 320px) {
+
+    .header {
+        height: 50px;
+    }
+
+    .header__inner {
+        padding-top: 7px;
+    }
+
+// Nav
+//==============
+
+    .nav {
+        top: 49px;
+    }
+
+}
