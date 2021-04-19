@@ -879,4 +879,55 @@ p {
     display: block;
   }
 }
+
+@media (max-width: 320px) {
+  .map {
+    margin-top: 50px;
+    width: 100%;
+    overflow: hidden;
+  }
+  .map__inner {
+    padding-top: 60px;
+    padding-left: 10px;
+  }
+  .map__world-map {
+    height: 373px;
+  }
+  .map__title {
+    display: none;
+  }
+  .map__animals-photo-bg {
+    width: 71px;
+    height: 71px;
+  }
+  .map__map-pets-bg {
+    height: 71px;
+    width: 71px;
+  }
+  .map__animals-photo {
+    width: 62px;
+    height: 58px;
+    left: 5px;
+    -webkit-mask-size: 62px 58px;
+            mask-size: 62px 58px;
+  }
+  .map__animals-photo_pandas {
+    background: no-repeat center url(../../assets/images/pets-layer.png), no-repeat center/90px auto url(../../assets/images/pets-panda-min.jpg);
+  }
+  .map__animals-card_eagles {
+    top: 215px;
+  }
+  .map__animals-card_alligators {
+    top: 230px;
+  }
+  .map__animals-card_gorillas {
+    top: 280px;
+  }
+  .map__animals-card_pandas {
+    top: 225px;
+  }
+  .tooltip {
+    left: -60px;
+  }
+}
 /*# sourceMappingURL=style.css.map */
