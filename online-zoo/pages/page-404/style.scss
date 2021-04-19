@@ -92,7 +92,7 @@
 // media 1200px
 // ==========================================
 
-@media (max-width: 1200px) {
+@media (max-width: 1580px) { //1200
 
     .error-page {
         background: no-repeat left 347px bottom 64px / 33px 65px url(../../assets/images/penguin.svg),
@@ -109,7 +109,7 @@
 // media 640px
 // ==========================================
 
-@media (max-width: 640px) {
+@media (max-width: 1200px) { //640
 
     .error-page {
         margin-top: 78px;
@@ -133,4 +133,21 @@
     .error-page__message {
         font-size: 14px;
     }
+}
+
+// media 320px
+// ==========================================
+
+@media (max-width: 640px) { //320
+
+    .error-page {
+        margin-top: 78px;
+        height: 720px;
+        background: no-repeat left 30px bottom 74px / 33px 65px url(../../assets/images/penguin.svg),
+                no-repeat right -18px bottom 132px / 89px 157px url(../../assets/images/tree.svg),
+                no-repeat left 145px bottom 84px / 103px 196px url(../../assets/images/bamboo.svg),
+                no-repeat left 87px bottom 92px / 114px 108px url(../../assets/images/panda.svg),
+                no-repeat center bottom / 100% 310px url(../../assets/images/zoos-bg-640.png);
+    }
+
 }
