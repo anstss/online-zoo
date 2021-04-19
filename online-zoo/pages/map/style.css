@@ -727,7 +727,7 @@ p {
   }
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 1580px) {
   .map__inner {
     padding-top: 40px;
   }
@@ -757,7 +757,7 @@ p {
   }
 }
 
-@media (max-width: 640px) {
+@media (max-width: 1200px) {
   .map {
     margin-top: 78px;
   }
@@ -880,7 +880,7 @@ p {
   }
 }
 
-@media (max-width: 320px) {
+@media (max-width: 640px) {
   .map {
     margin-top: 50px;
     width: 100%;
