@@ -823,7 +823,7 @@
 // media 1200px
 // ==========================================
 
-@media (max-width: 1200px) {
+@media (max-width: 1580px) { //1200
 
 /// Intro
 // ==========================================
@@ -1070,7 +1070,7 @@
 // media 640px
 // ==========================================
 
-@media (max-width: 640px) {
+@media (max-width: 1200px) { //640
     
     .intro {
         margin-top: 77px;
@@ -1425,8 +1425,7 @@
 // media 320px
 // ==========================================
 
-@media (max-width: 320px) {
-
+@media (max-width: 640px) { //320
     .intro {
         margin-top: 49px;
         height: 508px;
@@ -1618,9 +1617,7 @@
 
     .button_donate {
         position: absolute;
-        left: 10px;
         bottom: 94px;
-
         padding: 11px 72px;
     }
 

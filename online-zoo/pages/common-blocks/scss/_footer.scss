@@ -36,7 +36,8 @@
 // media 1200px
 // ==========================================
 
-@media (max-width: 1200px) {
+@media (max-width: 1580px) { //1200 1580
+
     .footer {
         height: 120px;
     }
@@ -50,7 +51,7 @@
 // media 640px
 // ==========================================
 
-@media (max-width: 640px) {
+@media (max-width: 1200px) { //640
 
     .footer {
         height: 78px;
