@@ -51,19 +51,19 @@ p {
   margin: 0 auto;
 }
 
-@media (max-width: 1580px) {
+@media (max-width: 1579px) {
   .container {
     max-width: 1140px;
   }
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 1199px) {
   .container {
     max-width: 600px;
   }
 }
 
-@media (max-width: 640px) {
+@media (max-width: 639px) {
   .container {
     max-width: 300px;
   }
@@ -296,7 +296,7 @@ p {
   display: none;
 }
 
-@media (max-width: 1580px) {
+@media (max-width: 1579px) {
   .nav__link {
     margin-right: 42px;
   }
@@ -313,7 +313,7 @@ p {
   }
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 1199px) {
   .header {
     height: 78px;
     position: fixed;
@@ -434,7 +434,7 @@ p {
   }
 }
 
-@media (max-width: 640px) {
+@media (max-width: 639px) {
   .header {
     height: 50px;
   }
@@ -552,7 +552,7 @@ p {
   margin-bottom: 0;
 }
 
-@media (max-width: 1580px) {
+@media (max-width: 1579px) {
   .footer {
     height: 120px;
   }
@@ -561,7 +561,7 @@ p {
   }
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 1199px) {
   .footer {
     height: 78px;
   }
@@ -578,13 +578,13 @@ p {
   }
 }
 
-@media (max-width: 1580px) {
+@media (max-width: 1579px) {
   .error-page {
     background: no-repeat left 347px bottom 64px/33px 65px url(../../assets/images/penguin.svg), no-repeat right 94px bottom 38px/130px 230px url(../../assets/images/tree.svg), no-repeat right 338px bottom 107px/147px 280px url(../../assets/images/bamboo.svg), no-repeat right 405px bottom 117px/163px 155px url(../../assets/images/panda.svg), no-repeat left 30px bottom 154px/130px 230px url(../../assets/images/tree.svg), no-repeat center bottom/100% 346px url(../../assets/images/zoos-bg-1200.png);
   }
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 1199px) {
   .error-page {
     margin-top: 78px;
     height: 720px;
@@ -601,7 +601,7 @@ p {
   }
 }
 
-@media (max-width: 640px) {
+@media (max-width: 639px) {
   .error-page {
     margin-top: 78px;
     height: 720px;
