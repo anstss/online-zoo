@@ -1219,9 +1219,6 @@ p {
     display: none;
     border-bottom: 1px solid #6A9C9F;
   }
-  .side-bar__animals-card:first-child {
-    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
-  }
   .side-bar__animals-photo-shape {
     margin: 0;
     padding: 0;
@@ -1240,6 +1237,7 @@ p {
     -webkit-order: -1;
         -ms-flex-order: -1;
             order: -1;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
   }
   .side-bar__open {
     display: inline;
