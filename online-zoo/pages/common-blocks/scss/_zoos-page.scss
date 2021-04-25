@@ -140,6 +140,10 @@
     }
 }
 
+.side-bar__open {
+    display: none;
+}
+
 
 // Zoos
 // ==========================================
@@ -831,7 +835,7 @@
 
     .side-bar {
         position: fixed;
-        top: 50px;
+        top: 49px;
         width: 100%;
     }
 
@@ -840,11 +844,11 @@
         padding: 0;
         margin: 0;
         background-color: $bg-color;
+        display: flex;
+        flex-wrap: wrap;
     }
 
     .side-bar__animals-card {
-        // width: 100%;
-        
         padding: 10px 18px;
         margin: 0;
         width: 300px;
@@ -878,12 +882,30 @@
 
     .side-bar__animals-card_active {
         display: flex;
+        order: -1;
     }
 
-    .side-bar__animals-card_active::after {
-        content: url(../../../assets/icons/dropdown-arrow.svg);
-        margin-left: 170px;
-        margin-top: 10px;
+    .side-bar__open {
+        display: inline;
+        background: no-repeat center url(../../../assets/icons/dropdown-arrow.svg);
+        width: 22px;
+        height: 22px;
+        margin-left: auto;
+        margin-right: -7px;
+        padding: 10px 7px;
+
+        transition: all 0.2s linear;
+    }
+
+    .side-bar__opened {
+
+        .side-bar__animals-card {
+            display: flex;
+        }
+
+        .side-bar__open {
+            transform: rotate(180deg);
+        }
     }
 
 // Zoos
