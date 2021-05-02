@@ -1,0 +1,176 @@
+// Pop-ups
+// ==========================================
+
+.cover {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+.form-sign-up,
+.form-log-in {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 200;
+
+    transform: translate(-50%, -50%);
+
+    width: 568px;
+    height: 774px;
+    font-family: $font-roboto;
+    color: $black-color;
+    border-radius: 20px;
+
+    background-color: #fff;
+}
+
+.form-log-in {
+    height: 635px;
+}
+
+.form-container {
+    width: 448px;
+    height: 571px;
+    margin: 0 auto;
+    margin-top: 32px;
+}
+
+.form__logo-bg {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 125px;
+    background-color: $button-lined;
+    border-radius: 20px 20px 0 0;
+}
+
+.form__logo {
+    width: 78px;
+    height: 61px;
+    font-size: 25.1613px;
+    line-height: 30px;
+    margin-right: 0;
+}
+
+.form-sign-up .logo__elem,
+.form-log-in .logo__elem {
+    width: 52px;
+    height: 18px;
+}
+
+.form__subtitles {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+
+    margin-bottom: 32px;
+}
+
+.form__subtitle {
+    font-size: 18px;
+    line-height: 21px;
+    color: $button-lined;
+    width: 50%;
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+.form__subtitle:visited {
+    color: $button-lined;
+}
+
+.form__subtitle-border {
+    position: absolute;
+    top: 40px;
+    height: 2px;
+    width: 100%;
+    background: linear-gradient(90deg, $button-lined 50%, $white-color 50%);
+}
+
+.form-log-in .form__subtitle-border {
+    background: linear-gradient(90deg, $white-color 50%, $button-lined 50%);
+}
+
+.form__socials {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 32px;
+}
+
+.form__social {
+    display: flex;
+    align-items: center;
+    width: 186px;
+    padding: 15px;
+    color: $black-color;
+    background-color: #fff;
+    box-shadow: 0px 2px 30px rgba(0, 0, 0, 0.06);
+    border-radius: 10px;
+}
+
+.social-icon {
+    width: 24px;
+    height: 24px;
+    margin-right: 15px;
+}
+
+.label-title {
+    display: block;
+    font-size: 14px;
+    line-height: 16px;
+    text-transform: uppercase;
+    margin-bottom: 8px;
+}
+
+.form__input {
+    width: 418px;
+    height: 54px;
+    background-color: #fff;
+    box-shadow: 0px 2px 30px rgba(0, 0, 0, 0.06);
+    border-radius: 10px;
+    margin-bottom: 20px;
+    padding: 0 15px;
+}
+
+.checkbox-wrapper {
+    display: flex;
+    align-items: center;
+    margin-top: 8px;
+    margin-bottom: 32px;
+}
+
+.form__checkbox {
+    width: 22px;
+    height: 22px;
+    margin-right: 22px;
+}
+
+.label-title-checkbox {
+    font-size: 16px;
+    line-height: 18px;
+}
+
+.button_send {
+    width: 100%;
+    padding: 15px 0;
+    color: $white-color;
+    background-color: $button-lined;
+    font-size: 18px;
+    line-height: 24px;
+    letter-spacing: 0.1em;
+}
+
+.invalid {
+    background-color: #dfdfdf;
+    color: #a8a8a8;
+}
+
+.hidden {
+    display: none;
+}
