@@ -35,10 +35,8 @@ const logInButton = document.getElementById("log-in");
 const signUpButton = document.getElementById("sign-up");
 const formSignUp = document.getElementById("form-sign-up");
 const formLogIn = document.getElementById("form-log-in");
-const formToggles = document.querySelectorAll(".form__subtitle");
-
-// let signUpToggle = null;
-// let logInToggle = null;
+const userIcon = document.getElementById("user-icon-elem");
+const navbarRight = document.getElementById("navbar-right");
 
 if (cover) {
     cover.addEventListener("click", function() {
@@ -54,20 +52,22 @@ if (logInButton) {
         formLogIn.classList.remove("hidden");
         cover.classList.remove("hidden");
         document.body.classList.add("_lock");
-        // signUpToggle = document.querySelector(".sign-up-elem");
-        // logInToggle = document.querySelector(".log-in-elem");
         toggleForm();
+        logInWithSocial();
     });
+}
+
+function openFormSignUp() {
+    formSignUp.classList.remove("hidden");
+    cover.classList.remove("hidden");
+    document.body.classList.add("_lock");
 }
 
 if (signUpButton) {
     signUpButton.addEventListener("click", function() {
-        formSignUp.classList.remove("hidden");
-        cover.classList.remove("hidden");
-        document.body.classList.add("_lock");
-        // signUpToggle = document.querySelector(".sign-up-elem");
-        // logInToggle = document.querySelector(".log-in-elem");
+        openFormSignUp();
         toggleForm();
+        logInWithSocial();
     });
 }
 
@@ -99,7 +99,10 @@ function validate() {
         }
 }
 
+let userName = null;
+
 nameFieldSignUp.addEventListener("input", function() {
+    userName = this.value;
     validate();
 });
 
@@ -123,23 +126,38 @@ passwordFieldLogIn.addEventListener("input", function() {
     validate();
 });
 
+function hideSignUpForm() {
+    formSignUp.classList.add("hidden");
+    cover.classList.add("hidden");
+    document.body.classList.remove("_lock");
+    navbarRight.classList.add("logged");
+}
+
+function hideLogInForm() {
+    formLogIn.classList.add("hidden");
+    cover.classList.add("hidden");
+    document.body.classList.remove("_lock");
+    navbarRight.classList.add("logged");
+}
+
 if (sendButtonSignUp) {
     sendButtonSignUp.addEventListener("click", function() {
         if (sendButtonSignUp.classList.contains("invalid")) return;
-        formSignUp.classList.add("hidden");
-        cover.classList.add("hidden");
-        document.body.classList.remove("_lock");
+        hideSignUpForm();
+        userIcon.setAttribute("title", userName);
+        userIcon.classList.remove("unlogged");
     });
 }
 
 if (sendButtonLogIn) {
     sendButtonLogIn.addEventListener("click", function() {
         if (sendButtonLogIn.classList.contains("invalid")) return;
-        formLogIn.classList.add("hidden");
-        cover.classList.add("hidden");
-        document.body.classList.remove("_lock");
+        hideLogInForm();
+        userIcon.classList.remove("unlogged");
     });
 }
+
+const formToggles = document.querySelectorAll(".form__subtitle");
 
 function toggleForm() {
     const formToggleElements = Array.from(formToggles);
@@ -154,3 +172,48 @@ function toggleForm() {
         }
     }));
 }
+
+const socialSignUp = document.querySelectorAll(".form__social");
+
+function logInWithSocial() {
+    socialSignUpElements = Array.from(socialSignUp);
+    socialSignUp.forEach(elem => elem.addEventListener("click", function() {
+        if (elem.classList.contains("sign-with-google")) {
+            hideSignUpForm();
+            userIcon.setAttribute("title", "Signed up with Google");
+            userIcon.classList.remove("unlogged");
+        }
+        if (elem.classList.contains("sign-with-facebook")) {
+            hideSignUpForm();
+            userIcon.setAttribute("title", "Signed up with Facebook");
+            userIcon.classList.remove("unlogged");
+        }
+        if (elem.classList.contains("log-with-google")) {
+            hideLogInForm();
+            userIcon.setAttribute("title", "Logged in with Google");
+            userIcon.classList.remove("unlogged");
+        }
+        if (elem.classList.contains("log-with-facebook")) {
+            hideLogInForm();
+            userIcon.setAttribute("title", "Logged in with Facebook");
+            userIcon.classList.remove("unlogged");
+        }
+    }));
+}
+
+const logOutMenu = document.getElementById("log-out-menu");
+const logOutButton = document.getElementById("log-out");
+
+userIcon.addEventListener("click", function() {
+    if (userIcon.classList.contains("unlogged")) {
+        openFormSignUp();
+    } else {
+        logOutMenu.classList.toggle("hidden");
+    }
+});
+
+logOutButton.addEventListener("click", function() {
+    logOutMenu.classList.add("hidden");
+    navbarRight.classList.remove("logged");
+    userName = null;
+})

@@ -242,7 +242,7 @@
                         </ul>
                     </nav>
                 </div>
-                <ul class="navbar-right">
+                <ul class="navbar-right" id="navbar-right">
                     <li class="navbar-right__item">
                         <form action="" class="search">
                             <label for="search" class="search__icon">
@@ -253,16 +253,16 @@
                             <input type="text" id="search" class="search__input" placeholder="Search...">
                         </form>
                     </li>
-                    <li class="navbar-right__item">
+                    <li class="navbar-right__item unlogged" id="user-icon-elem">
                         <svg class="user-icon">
                             <use href="#user-icon"></use>
                         </svg>
                     </li>
-                    <li class="navbar-right__item">
-                        <button class="navbar-right__button navbar-right__button_log-in" id="log-in">Log In</button>
+                    <li class="navbar-right__item" id="log-in">
+                        <button class="navbar-right__button navbar-right__button_log-in">Log In</button>
                     </li>
-                    <li class="navbar-right__item">
-                        <button class="navbar-right__button navbar-right__button_sign-up" id="sign-up">Sign Up</button>
+                    <li class="navbar-right__item" id="sign-up">
+                        <button class="navbar-right__button navbar-right__button_sign-up">Sign Up</button>
                     </li>
                 </ul>
                 <div class="burger-menu">
@@ -271,6 +271,11 @@
             </div>
         </div>
     </header>
+    <div class="container log-out-container hidden" id="log-out-menu">
+        <div class="log-out-menu">
+            <a href="#" class="log-out" id="log-out">Log out</a>
+        </div>
+    </div>
 
     <!-- Intro / Watch your favorite animal online -->
     <section class="intro">
@@ -666,7 +671,7 @@
         </div> <!-- container -->
     </footer>
 
-    <!-- Pop-up -->
+    <!-- Pop-ups -->
     <form action="#" class="form-sign-up hidden" id="form-sign-up">
         <div class="form__logo-bg">
             <a href="#" class="logo form__logo">
@@ -687,25 +692,25 @@
                 <div class="form__subtitle-border"></div>
             </div>
             <div class="form__socials">
-                <a href="#" class="form__social sign-up-google">
+                <a href="#" class="form__social sign-up-google sign-with-google">
                     <svg class="social-icon google-logo">
                         <use href="#google-icon"></use>
                     </svg>
                     Google Sign up
                 </a>
-                <a href="#" class="form__social sign-up-facebook">
+                <a href="#" class="form__social sign-up-facebook sign-with-facebook">
                     <svg class="social-icon facebook-logo">
                         <use href="#facebook-icon"></use>
                     </svg>
                     Facebook Sign up
                 </a>
             </div>
-            <label for="name" class="label-title">Name</label>
+            <label for="name" class="label-title" id="user-name">Name</label>
             <input type="text" class="form__input" id="name" required>
             <label for="email" class="label-title">Email</label>
             <input type="email" class="form__input" id="email_sign-up" required>
             <label for="password" class="label-title">Password</label>
-            <input type="password" class="form__input" id="password_sign-up" required>
+            <input type="password" class="form__input" id="password_sign-up" required minlength="8">
             <div class="checkbox-wrapper">
                 <input type="checkbox" class="form__checkbox" id="agreement" required>
                 <label for="agreement" class="label-title-checkbox">Agree with the User Agreement and Privacy
@@ -736,13 +741,13 @@
                 <div class="form__subtitle-border"></div>
             </div>
             <div class="form__socials">
-                <a href="#" class="form__social sign-up-google">
+                <a href="#" class="form__social sign-up-google log-with-google">
                     <svg class="social-icon google-logo">
                         <use href="#google-icon"></use>
                     </svg>
                     Google Log in
                 </a>
-                <a href="#" class="form__social sign-up-facebook">
+                <a href="#" class="form__social sign-up-facebook log-with-facebook">
                     <svg class="social-icon facebook-logo">
                         <use href="#facebook-icon"></use>
                     </svg>
@@ -752,7 +757,7 @@
             <label for="email" class="label-title">Email</label>
             <input type="email" class="form__input" id="email_log-in" required>
             <label for="password" class="label-title">Password</label>
-            <input type="password" class="form__input" id="password_log-in" required>
+            <input type="password" class="form__input" id="password_log-in" required minlength="8">
             <button class="button button_send invalid" id="button-send_log-in">Send</button>
         </div>
     </form>
