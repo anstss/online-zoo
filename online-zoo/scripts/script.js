@@ -146,6 +146,7 @@ if (sendButtonSignUp) {
         hideSignUpForm();
         userIcon.setAttribute("title", userName);
         userIcon.classList.remove("unlogged");
+        logOutMenu.classList.remove("unactive");
     });
 }
 
@@ -155,6 +156,7 @@ if (sendButtonLogIn) {
         hideLogInForm();
         userIcon.setAttribute("title", "User");
         userIcon.classList.remove("unlogged");
+        logOutMenu.classList.remove("unactive");
     });
 }
 
@@ -209,6 +211,7 @@ userIcon.addEventListener("click", function() {
     if (userIcon.classList.contains("unlogged")) {
         openFormSignUp();
     } else {
+        logOutMenu.classList.remove("unactive");
         logOutMenu.classList.toggle("hidden");
     }
 });
@@ -216,7 +219,10 @@ userIcon.addEventListener("click", function() {
 logOutButton.addEventListener("click", function() {
     logOutMenu.classList.add("hidden");
     navbarRight.classList.remove("logged");
+    userIcon.classList.add("unlogged");
     userName = null;
+    userIcon.removeAttribute("title");
+    logOutMenu.classList.add("unactive");
 });
 
 

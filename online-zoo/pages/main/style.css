@@ -2434,6 +2434,10 @@ p {
   display: none;
 }
 
+.unactive {
+  display: none;
+}
+
 .logged .nav__link {
   margin-right: 42px;
 }
