@@ -153,6 +153,7 @@ if (sendButtonLogIn) {
     sendButtonLogIn.addEventListener("click", function() {
         if (sendButtonLogIn.classList.contains("invalid")) return;
         hideLogInForm();
+        userIcon.setAttribute("title", "User");
         userIcon.classList.remove("unlogged");
     });
 }
@@ -216,4 +217,49 @@ logOutButton.addEventListener("click", function() {
     logOutMenu.classList.add("hidden");
     navbarRight.classList.remove("logged");
     userName = null;
-})
+});
+
+
+// TODO: fix for media < 1200px (1198)
+
+const carousel = document.querySelector(".pets-in-zoo__cards");
+const carouselItems = document.querySelectorAll(".pets-in-zoo__cards-group");
+
+let currentCarouselItem = 0;
+
+function changeCurrentCarouselItem(n) {
+    currentCarouselItem = (n + carouselItems.length) % carouselItems.length;
+}
+
+function hideItem() {
+    carouselItems[currentCarouselItem].classList.remove("active");
+}
+
+function showItem() {
+    carouselItems[currentCarouselItem].classList.add("active");
+}
+
+const buttonNext = document.querySelector(".slider-button_next");
+const buttonPrev = document.querySelector(".slider-button_prev");
+
+buttonNext.addEventListener("click", function() {
+    hideItem();
+    changeCurrentCarouselItem(currentCarouselItem + 1);
+    showItem();
+});
+
+buttonPrev.addEventListener("click", function() {
+    hideItem();
+    changeCurrentCarouselItem(currentCarouselItem - 1);
+    showItem();
+});
+
+// let width = carousel.offsetWidth;
+// buttonNext.addEventListener("click", function() {
+//     carousel.scrollBy(width, 0);
+// });
+
+// buttonPrev.addEventListener("click", function() {
+//     carousel.scrollBy(-width, 0);
+// });
+
