@@ -1257,6 +1257,16 @@ p {
   fill: #fff;
 }
 
+.testimonials__cards-wrapper {
+  width: 100%;
+  overflow: auto;
+  scroll-behavior: smooth;
+}
+
+.testimonials__cards-wrapper::-webkit-scrollbar {
+  height: 0;
+}
+
 .testimonials__cards {
   display: -webkit-box;
   display: -webkit-flex;
@@ -1267,12 +1277,14 @@ p {
       -ms-flex-pack: justify;
           justify-content: space-between;
   width: 100%;
-  padding-top: 52px;
+  padding: 52px 4px 0;
 }
 
 .testimonials__card {
   position: relative;
+  min-width: 32.4%;
   width: 480px;
+  margin-right: 20px;
   font-family: "Roboto", sans-serif;
   font-weight: 400;
 }
@@ -2152,8 +2164,7 @@ p {
     padding-top: 0;
     margin-top: 0;
   }
-  .testimonials__card:nth-child(-n+2),
-  .testimonials__card {
+  .testimonials__card:nth-child(-n+3) {
     display: block;
     width: 300px;
     margin-bottom: 24px;

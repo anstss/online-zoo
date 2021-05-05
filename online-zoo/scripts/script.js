@@ -263,3 +263,32 @@ buttonPrev.addEventListener("click", function() {
 //     carousel.scrollBy(-width, 0);
 // });
 
+
+const sliderTestimonials = document.querySelector(".testimonials__cards-wrapper");
+const contentSliderTestimonials = document.querySelector(".testimonials__cards");
+let widthSliderTestimonials = sliderTestimonials.offsetWidth;
+
+const gap = 25;
+
+window.addEventListener("resize", e => (widthSliderTestimonials = sliderTestimonials.offsetWidth));
+
+const slideTestimonails = () => {
+    sliderTestimonials.scrollBy(widthSliderTestimonials + gap, 0);
+    if (contentSliderTestimonials.scrollWidth - widthSliderTestimonials < sliderTestimonials.scrollLeft + widthSliderTestimonials) {
+        sliderTestimonials.scrollBy(-(widthSliderTestimonials + gap) * 3, 0);
+    }
+}
+
+let autoSliderTestimonialsInterval = setInterval(slideTestimonails, 10000);
+let autoSliderTestimonialsTimeout = null;
+
+const delaySliding = () => {
+    clearInterval(autoSliderTestimonialsInterval);
+    autoSliderTestimonialsInterval = null;
+
+    autoSliderTestimonialsTimeout = setTimeout(() => {
+        autoSliderTestimonialsInterval = setInterval(slideTestimonails, 10000);
+    }, 20000);
+}
+
+sliderTestimonials.addEventListener("click", delaySliding);
