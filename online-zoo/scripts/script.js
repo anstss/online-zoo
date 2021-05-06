@@ -118,7 +118,7 @@ agreementFieldSignUp.addEventListener("input", function() {
     validate();
 });
 
-emailFieldLogIn.addEventListener("input", function() {
+emailFieldLogIn.addEventListener("change", function() {
     validate();
 });
 
@@ -150,9 +150,16 @@ if (sendButtonSignUp) {
     });
 }
 
+const warning = document.querySelector(".warning");
+
 if (sendButtonLogIn) {
     sendButtonLogIn.addEventListener("click", function() {
         if (sendButtonLogIn.classList.contains("invalid")) return;
+        if (emailFieldLogIn.value !== "user@gmail.com" || passwordFieldLogIn.value !== "useruser") {
+            warning.classList.remove("hidden");
+            return;
+        }
+        warning.classList.add("hidden");
         hideLogInForm();
         userIcon.setAttribute("title", "User");
         userIcon.classList.remove("unlogged");
@@ -212,6 +219,7 @@ const logOutButton = document.getElementById("log-out");
 userIcon.addEventListener("click", function() {
     if (userIcon.classList.contains("unlogged")) {
         openFormSignUp();
+        toggleForm();
         logInWithSocial();
     } else {
         logOutMenu.classList.remove("unactive");
