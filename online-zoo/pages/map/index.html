@@ -305,98 +305,103 @@
         <div class="container">
             <div class="map__inner">
                 <h2 class="map__title">Choose your favorite Animal</h2>
-                <svg class="map__world-map">
-                    <use href="#map"></use>
-                </svg>
-                <div class="map__animals">
-                    <div class="map__animals-card_eagles">
-                        <a href="../../pages/zoos/eagle/index.html" class="map__animals-card">
-                            <div class="tooltip">
-                                <div class="map__animals-tooltip">
-                                    <div class="map__animals-tooltip-info">
-                                        <p class="map__animals-tooltip-text">Eagles</p>
-                                        <p class="map__animals-tooltip-text">Catalina Island</p>
+                <div class="map-wrapper" id="map-wrapper">
+                    <div class="map-with-animals" id="map-with-animals">
+                        <img src="../../assets/map/map.svg" class="map__world-map" alt="World map">
+                        <!-- <svg class="map__world-map">
+                            <use href="#map"></use>
+                        </svg> -->
+                        <div class="map__animals">
+                            <div class="map__animals-card_eagles">
+                                <a href="../../pages/zoos/eagle/index.html" class="map__animals-card">
+                                    <div class="tooltip">
+                                        <div class="map__animals-tooltip">
+                                            <div class="map__animals-tooltip-info">
+                                                <p class="map__animals-tooltip-text">Eagles</p>
+                                                <p class="map__animals-tooltip-text">Catalina Island</p>
+                                            </div>
+                                        </div>
                                     </div>
-                                </div>
-                            </div>
-                            <div class="map__animals-photo-bg">
-                                <svg class="map__map-pets-bg">
-                                    <use href="#map-pets-bg"></use>
-                                </svg>
-                                <div class="map__animals-photo map__animals-photo_eagles"></div>
-                            </div>
-                        </a>
-                        <a href="../../pages/zoos/eagle/index.html" class="tooltip__button tooltip__button-eagles">Watch online</a>
-                    </div>
-                    <div class="map__animals-card_alligators">
-                        <a href="../../pages/zoos/alligator/index.html" class="map__animals-card">
-                            <div class="tooltip">
-                                <div class="map__animals-tooltip">
-                                    <div class="map__animals-tooltip-info">
-                                        <p class="map__animals-tooltip-text">Alligators</p>
-                                        <p class="map__animals-tooltip-text">Florida, USA</p>
+                                    <div class="map__animals-photo-bg">
+                                        <svg class="map__map-pets-bg">
+                                            <use href="#map-pets-bg"></use>
+                                        </svg>
+                                        <div class="map__animals-photo map__animals-photo_eagles"></div>
                                     </div>
-                                </div>
+                                </a>
+                                <a href="../../pages/zoos/eagle/index.html" class="tooltip__button tooltip__button-eagles">Watch online</a>
                             </div>
-                            <div class="map__animals-photo-bg">
-                                <svg class="map__map-pets-bg">
-                                    <use href="#map-pets-bg"></use>
-                                </svg>
-                                <div class="map__animals-photo map__animals-photo_alligators"></div>
-                            </div>
-                        </a>
-                        <a href="../../pages/zoos/alligator/index.html" class="tooltip__button">Watch online</a>
-                    </div>
-                    <div class="map__animals-card_gorillas">
-                        <a href="../../pages/zoos/gorilla/index.html" class="map__animals-card">
-                            <div class="tooltip">
-                                <div class="map__animals-tooltip">
-                                    <div class="map__animals-tooltip-info">
-                                        <p class="map__animals-tooltip-text">Gorillas</p>
-                                        <p class="map__animals-tooltip-text">Africa</p>
+                            <div class="map__animals-card_alligators">
+                                <a href="../../pages/zoos/alligator/index.html" class="map__animals-card">
+                                    <div class="tooltip">
+                                        <div class="map__animals-tooltip">
+                                            <div class="map__animals-tooltip-info">
+                                                <p class="map__animals-tooltip-text">Alligators</p>
+                                                <p class="map__animals-tooltip-text">Florida, USA</p>
+                                            </div>
+                                        </div>
                                     </div>
-                                </div>
-                            </div>
-                            <div class="map__animals-photo-bg">
-                                <svg class="map__map-pets-bg">
-                                    <use href="#map-pets-bg"></use>
-                                </svg>
-                                <div class="map__animals-photo map__animals-photo_gorillas"></div>
-                            </div>
-                        </a>
-                        <a href="../../pages/zoos/gorilla/index.html" class="tooltip__button">Watch online</a>
-                    </div>
-                    <div class="map__animals-card_pandas">
-                        <a href="../../pages/zoos/panda/index.html" class="map__animals-card">
-                            <div class="tooltip">
-                                <div class="map__animals-tooltip">
-                                    <div class="map__animals-tooltip-info">
-                                        <p class="map__animals-tooltip-text">Pandas</p>
-                                        <p class="map__animals-tooltip-text">China</p>
+                                    <div class="map__animals-photo-bg">
+                                        <svg class="map__map-pets-bg">
+                                            <use href="#map-pets-bg"></use>
+                                        </svg>
+                                        <div class="map__animals-photo map__animals-photo_alligators"></div>
                                     </div>
-                                </div>
+                                </a>
+                                <a href="../../pages/zoos/alligator/index.html" class="tooltip__button">Watch online</a>
                             </div>
-                            <div class="map__animals-photo-bg">
-                                <svg class="map__map-pets-bg">
-                                    <use href="#map-pets-bg"></use>
-                                </svg>
-                                <div class="map__animals-photo map__animals-photo_pandas"></div>
+                            <div class="map__animals-card_gorillas">
+                                <a href="../../pages/zoos/gorilla/index.html" class="map__animals-card">
+                                    <div class="tooltip">
+                                        <div class="map__animals-tooltip">
+                                            <div class="map__animals-tooltip-info">
+                                                <p class="map__animals-tooltip-text">Gorillas</p>
+                                                <p class="map__animals-tooltip-text">Africa</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="map__animals-photo-bg">
+                                        <svg class="map__map-pets-bg">
+                                            <use href="#map-pets-bg"></use>
+                                        </svg>
+                                        <div class="map__animals-photo map__animals-photo_gorillas"></div>
+                                    </div>
+                                </a>
+                                <a href="../../pages/zoos/gorilla/index.html" class="tooltip__button">Watch online</a>
                             </div>
-                        </a>
-                        <a href="../../pages/zoos/panda/index.html" class="tooltip__button">Watch online</a>
+                            <div class="map__animals-card_pandas">
+                                <a href="../../pages/zoos/panda/index.html" class="map__animals-card">
+                                    <div class="tooltip">
+                                        <div class="map__animals-tooltip">
+                                            <div class="map__animals-tooltip-info">
+                                                <p class="map__animals-tooltip-text">Pandas</p>
+                                                <p class="map__animals-tooltip-text">China</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="map__animals-photo-bg">
+                                        <svg class="map__map-pets-bg">
+                                            <use href="#map-pets-bg"></use>
+                                        </svg>
+                                        <div class="map__animals-photo map__animals-photo_pandas"></div>
+                                    </div>
+                                </a>
+                                <a href="../../pages/zoos/panda/index.html" class="tooltip__button">Watch online</a>
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <div class="map__buttons">
-                    <a href="#" class="zoom-in">
+                    <button class="zoom-in" id="zoom-in-button">
                         <svg class="zoom-in__elem">
                             <use href="#zoom-in"></use>
                         </svg>
-                    </a>
-                    <a href="#" class="zoom-out">
+                    </button>
+                    <button class="zoom-out" id="zoom-out-button">
                         <svg class="zoom-out__elem">
                             <use href="#zoom-out"></use>
                         </svg>
-                    </a>
+                    </button>
                 </div>
             </div>
         </div>
@@ -444,6 +449,7 @@
         </div> <!-- container -->
     </footer>
 
-    <script src="../../scripts/script.js"></script>
+    <!-- <script src="../../scripts/script.js"></script> -->
+    <script src="../../scripts/map.js"></script>
 </body>
 </html>
