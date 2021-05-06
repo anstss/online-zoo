@@ -180,8 +180,10 @@ const socialSignUp = document.querySelectorAll(".form__social");
 
 function logInWithSocial() {
     socialSignUpElements = Array.from(socialSignUp);
-    socialSignUp.forEach(elem => elem.addEventListener("click", function() {
+    socialSignUpElements.forEach(elem => elem.addEventListener("click", function() {
+        console.log("TEST");
         if (elem.classList.contains("sign-with-google")) {
+            console.log("TEST");
             hideSignUpForm();
             userIcon.setAttribute("title", "Signed up with Google");
             userIcon.classList.remove("unlogged");
@@ -210,6 +212,7 @@ const logOutButton = document.getElementById("log-out");
 userIcon.addEventListener("click", function() {
     if (userIcon.classList.contains("unlogged")) {
         openFormSignUp();
+        logInWithSocial();
     } else {
         logOutMenu.classList.remove("unactive");
         logOutMenu.classList.toggle("hidden");
