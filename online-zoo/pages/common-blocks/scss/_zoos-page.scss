@@ -231,6 +231,10 @@
     }
 }
 
+.zoos__button-favorite-icon.active {
+    fill: $button-lined;
+}
+
 // Main cameras
 //==============
 
@@ -693,6 +697,7 @@
         height: 20px;
         padding-top: 6px;
     }
+    
 
 // Main cameras
 //==============

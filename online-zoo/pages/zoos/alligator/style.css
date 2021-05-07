@@ -698,6 +698,10 @@ p {
   stroke: #fff;
 }
 
+.zoos__button-favorite-icon.active {
+  fill: #19707D;
+}
+
 .zoos__cameras-title {
   font-family: "Rubik", sans-serif;
   font-weight: 400;
